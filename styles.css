@@ -103,10 +103,10 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 
 /* ─── LAYOUT ─── */
 .container{width:100%;max-width:1240px;margin:0 auto;padding:0 28px;position:relative;z-index:2}
-.sp{padding:108px 0}
+.sp{padding:82px 0}
 
 /* ─── SECTION HEADER ─── */
-.sec-hd{text-align:center;margin-bottom:64px}
+.sec-hd{text-align:center;margin-bottom:50px}
 .sec-title{
   font-family:'Space Grotesk',sans-serif;
   font-size:clamp(2rem,3.8vw,2.75rem);
@@ -310,7 +310,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 .hs-sep{width:1px;height:36px;background:var(--c-bd)}
 
 /* ── Hero Right ── */
-.hero-right{display:flex;align-items:center;justify-content:center;padding-top:56px}
+.hero-right{display:flex;align-items:center;justify-content:center;padding-top:80px}
 .photo-frame{position:relative;width:480px;height:480px;display:flex;align-items:center;justify-content:center}
 .photo-ring{
   position:absolute;border-radius:50%;
@@ -356,10 +356,10 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 
 /* ─── ABOUT ─── */
 .about{background:var(--c-bg1)}
-.about-grid{display:grid;grid-template-columns:1fr 1.3fr;align-items:center;gap:72px}
+.about-grid{display:grid;grid-template-columns:1fr 1.3fr;align-items:flex-start;gap:56px}
 .about-photo{position:relative}
 .ap-frame{border-radius:22px;overflow:hidden;box-shadow:var(--sh-lg);position:relative}
-.ap-frame img{width:100%;height:480px;object-fit:cover;transition:var(--tr-slow)}
+.ap-frame img{width:100%;height:480px;object-fit:cover;object-position:top center;transition:var(--tr-slow)}
 .ap-frame:hover img{transform:scale(1.03)}
 .ap-overlay{
   position:absolute;inset:0;
@@ -403,10 +403,10 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 
 /* ─── SKILLS ─── */
 .skills{background:var(--c-bg0)}
-.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .sk-card{
   background:var(--g-card);border:1px solid var(--c-bd);
-  border-radius:18px;padding:28px 24px;
+  border-radius:18px;padding:24px 22px;
   transition:var(--tr);position:relative;overflow:hidden;
 }
 .sk-card::before{
@@ -494,11 +494,11 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 
 /* ─── CONTACT ─── */
 .contact{background:var(--c-bg0)}
-.contact-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:40px;align-items:start}
+.contact-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:32px;align-items:start}
 
 .ct-info{
   background:var(--g-card);border:1px solid var(--c-bd);
-  border-radius:22px;padding:36px;transition:var(--tr);
+  border-radius:18px;padding:28px;transition:var(--tr);
 }
 .ct-info:hover{border-color:var(--c-bd2);box-shadow:var(--sh-bl)}
 .ct-info>h3{
@@ -533,7 +533,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 
 .ct-form{
   background:var(--g-card);border:1px solid var(--c-bd);
-  border-radius:22px;padding:36px;transition:var(--tr);
+  border-radius:18px;padding:28px;transition:var(--tr);
 }
 .ct-form:hover{border-color:var(--c-bd2)}
 .fg-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
