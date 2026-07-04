@@ -1,589 +1,521 @@
 <!DOCTYPE html>
 <html lang="id" data-theme="dark">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Muhammad Ramadhan Putra Pratama - Portfolio Website. Web Developer, UI/UX Designer, Graphic Designer, Video Editor & Live Streaming Operator dari Palembang, Indonesia." />
-    <meta name="keywords" content="portfolio, web developer, UI/UX, graphic design, video editor, live streaming, Palembang" />
-    <meta name="author" content="Muhammad Ramadhan Putra Pratama" />
-    <title>PrataMana | Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Muhammad Ramadhan Putra Pratama — Portfolio. Web Developer, UI/UX Designer, Graphic Designer, Video Editor & Live Streaming Operator dari Palembang, Indonesia." />
+  <meta name="keywords" content="portfolio, web developer, UI/UX, graphic design, video editor, live streaming, Palembang, Pratama" />
+  <meta name="author" content="Muhammad Ramadhan Putra Pratama" />
+  <title>PrataMana | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
-    <div class="cursor-glow" id="cursorGlow"></div>
-    <canvas id="particleCanvas"></canvas>
+<div class="cursor-glow" id="cursorGlow"></div>
+<canvas id="particleCanvas"></canvas>
 
-    <!-- ===== HEADER ===== -->
-    <header id="mainHeader">
-      <div class="container">
-        <a href="#home" class="logo" id="logoLink">
-          <span class="logo-bracket">&lt;</span>PrataMana<span class="logo-bracket">/&gt;</span>
+<!-- ════════════════════ HEADER ════════════════════ -->
+<header id="mainHeader">
+  <div class="container nav-container">
+    <a href="#home" class="logo">
+      <span class="logo-lt">&lt;</span>PrataMana<span class="logo-lt">/&gt;</span>
+    </a>
+    <nav id="navLinks" aria-label="Navigasi">
+      <ul>
+        <li><a href="#home"      class="nav-item" id="n-home">Beranda</a></li>
+        <li><a href="#about"     class="nav-item" id="n-about">Tentang</a></li>
+        <li><a href="#skills"    class="nav-item" id="n-skills">Keahlian</a></li>
+        <li><a href="#portfolio" class="nav-item" id="n-port">Portofolio</a></li>
+        <li><a href="#contact"   class="nav-item" id="n-contact">Kontak</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <button id="themeToggle" class="btn-icon" aria-label="Ganti tema" title="Ganti Tema">
+        <i class="fas fa-sun" id="themeIcon"></i>
+      </button>
+      <button id="hamburgerBtn" class="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ════════════════════ HERO ════════════════════ -->
+<section id="home" class="hero">
+  <div class="hero-shapes">
+    <span class="hs hs-1"></span>
+    <span class="hs hs-2"></span>
+    <span class="hs hs-3"></span>
+  </div>
+
+  <div class="container hero-grid">
+
+    <!-- LEFT -->
+    <div class="hero-left">
+      <div class="hero-avail">
+        <span class="avail-dot"></span>
+        <span>Available for Projects</span>
+      </div>
+
+      <p class="hero-greeting">Halo, saya</p>
+      <h1 class="hero-name">Muhammad<br><span class="name-hi">Ramadhan Putra Pratama</span></h1>
+
+      <!-- ROLE SWITCHER — 1 at a time -->
+      <div class="role-box">
+        <span class="role-prefix">Seorang&nbsp;</span>
+        <div class="role-stage" id="roleStage" aria-live="polite">
+          <span class="role-item" aria-hidden="true">Web Developer</span>
+          <span class="role-item" aria-hidden="true">UI/UX Designer</span>
+          <span class="role-item" aria-hidden="true">Graphic Designer</span>
+          <span class="role-item" aria-hidden="true">Video Editor</span>
+          <span class="role-item" aria-hidden="true">Live Streaming Op.</span>
+        </div>
+      </div>
+
+      <p class="hero-bio">
+        Kreator digital multidisipliner asal Palembang yang memadukan
+        estetika desain dengan teknologi untuk menciptakan pengalaman
+        digital yang <strong>bermakna</strong> dan <strong>berdampak</strong>.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#portfolio" class="btn btn-primary" id="heroCTAPortfolio">
+          <i class="fas fa-briefcase"></i> Lihat Portofolio
         </a>
-        <nav class="nav-links" id="navLinks" aria-label="Main Navigation">
-          <ul>
-            <li><a href="#home"     class="nav-item" id="navHome">Beranda</a></li>
-            <li><a href="#about"    class="nav-item" id="navAbout">Tentang</a></li>
-            <li><a href="#skills"   class="nav-item" id="navSkills">Keahlian</a></li>
-            <li><a href="#portfolio"class="nav-item" id="navPortfolio">Portofolio</a></li>
-            <li><a href="#contact"  class="nav-item" id="navContact">Kontak</a></li>
-          </ul>
-        </nav>
-        <div class="header-actions">
-          <button class="theme-toggle" id="themeToggle" aria-label="Toggle tema" title="Ganti Tema">
-            <i class="fas fa-sun" id="themeIcon"></i>
-          </button>
-          <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
-            <span></span><span></span><span></span>
-          </button>
+        <a href="#contact" class="btn btn-ghost" id="heroCTAContact">
+          <i class="fas fa-paper-plane"></i> Hubungi Saya
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hs-item">
+          <span class="hs-num" data-target="8">0+</span>
+          <span class="hs-lbl">Proyek Selesai</span>
+        </div>
+        <span class="hs-sep"></span>
+        <div class="hs-item">
+          <span class="hs-num" data-target="5">0+</span>
+          <span class="hs-lbl">Bidang Keahlian</span>
+        </div>
+        <span class="hs-sep"></span>
+        <div class="hs-item">
+          <span class="hs-num" data-target="3">0+</span>
+          <span class="hs-lbl">Tahun Pengalaman</span>
         </div>
       </div>
-    </header>
+    </div>
 
-    <!-- ===== HERO SECTION ===== -->
-    <section id="home" class="hero">
-      <div class="hero-bg-shapes">
-        <div class="shape shape-1"></div>
-        <div class="shape shape-2"></div>
-        <div class="shape shape-3"></div>
-      </div>
-      <div class="container">
-        <div class="hero-content">
-
-          <!-- Role Switcher Animasi -->
-          <div class="role-switcher">
-            <span class="role-prefix">Seorang&nbsp;</span>
-            <div class="role-track" id="roleTrack">
-              <span class="role-word">Web Developer</span>
-              <span class="role-word">UI/UX Designer</span>
-              <span class="role-word">Graphic Designer</span>
-              <span class="role-word">Video Editor</span>
-              <span class="role-word">Live Streaming Operator</span>
-            </div>
-          </div>
-
-          <!-- Nama statis -->
-          <h1 class="hero-name-static">
-            Muhammad Ramadhan<br />
-            <span class="name-accent">Putra Pratama</span>
-          </h1>
-
-          <p class="hero-desc">
-            Kreator digital multidisipliner asal Palembang yang menggabungkan
-            estetika desain dengan teknologi untuk menciptakan pengalaman digital
-            yang <strong>impactful</strong> dan <strong>memorable</strong>.
-          </p>
-
-          <div class="hero-buttons">
-            <a href="#portfolio" class="btn btn-primary" id="heroCTAPortfolio">
-              <i class="fas fa-briefcase"></i> Lihat Portofolio
-            </a>
-            <a href="#contact" class="btn btn-outline" id="heroCTAContact">
-              <i class="fas fa-paper-plane"></i> Hubungi Saya
-            </a>
-          </div>
-
-          <div class="hero-stats">
-            <div class="stat-item">
-              <span class="stat-number" data-target="8">8+</span>
-              <span class="stat-label">Proyek Selesai</span>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat-item">
-              <span class="stat-number" data-target="5">5+</span>
-              <span class="stat-label">Bidang Keahlian</span>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat-item">
-              <span class="stat-number" data-target="3">3+</span>
-              <span class="stat-label">Tahun Pengalaman</span>
-            </div>
-          </div>
+    <!-- RIGHT -->
+    <div class="hero-right">
+      <div class="photo-frame">
+        <div class="photo-ring r1"></div>
+        <div class="photo-ring r2"></div>
+        <div class="photo-ring r3"></div>
+        <div class="photo-wrap">
+          <img src="2.png" alt="Muhammad Ramadhan Putra Pratama" />
         </div>
+        <div class="photo-chip chip-1"><i class="fas fa-code"></i> Dev</div>
+        <div class="photo-chip chip-2"><i class="fas fa-paint-brush"></i> Design</div>
+        <div class="photo-chip chip-3"><i class="fas fa-video"></i> Video</div>
+      </div>
+    </div>
 
-        <div class="hero-image-wrap">
-          <div class="hero-image-ring ring-1"></div>
-          <div class="hero-image-ring ring-2"></div>
-          <div class="hero-image-ring ring-3"></div>
-          <div class="hero-image">
-            <img src="2.png" alt="Muhammad Ramadhan Putra Pratama" id="heroProfileImg" />
-          </div>
-          <div class="hero-badge-float badge-float-1"><i class="fas fa-code"></i> Dev</div>
-          <div class="hero-badge-float badge-float-2"><i class="fas fa-paint-brush"></i> Design</div>
-          <div class="hero-badge-float badge-float-3"><i class="fas fa-video"></i> Video</div>
+  </div>
+
+  <div class="scroll-hint">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ════════════════════ ABOUT ════════════════════ -->
+<section id="about" class="about sp">
+  <div class="container">
+    <div class="sec-hd">
+      <h2 class="sec-title">Tentang Saya</h2>
+      <p class="sec-sub">Mengenal lebih dekat sosok di balik karya-karya digital ini</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-photo" data-aos>
+        <div class="ap-frame">
+          <img src="FotoPorto.jpg" alt="Foto Pratama" />
+          <div class="ap-overlay"></div>
+        </div>
+        <div class="ap-badge">
+          <span class="ap-num">3+</span>
+          <span class="ap-lbl">Tahun<br>Pengalaman</span>
         </div>
       </div>
 
-      <div class="scroll-indicator" id="scrollIndicator">
-        <div class="scroll-line"></div>
-        <span>Scroll</span>
-      </div>
-    </section>
+      <div class="about-body" data-aos>
+        <span class="about-tag">Digital Creator &amp; Developer</span>
+        <h3 class="about-name">Muhammad Ramadhan<br>Putra Pratama</h3>
 
-    <!-- ===== ABOUT SECTION ===== -->
-    <section id="about" class="about section-padding">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Tentang Saya</h2>
-          <p class="section-subtitle">Mengenal lebih dekat sosok di balik karya-karya digital ini</p>
+        <p class="about-p">
+          Saya adalah seorang <strong>kreator digital multidisipliner</strong> dengan
+          keahlian di Web Development, UI/UX Design, Pengembangan Aplikasi,
+          Desain Grafis, Video Editing, dan Live Streaming Operation.
+        </p>
+        <p class="about-p">
+          Berpengalaman dalam proyek kreatif dan teknis, saya menggabungkan
+          estetika dengan fungsionalitas untuk solusi yang <strong>impactful</strong>
+          dan <strong>user-friendly</strong>.
+        </p>
+
+        <div class="about-meta">
+          <div class="meta-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div><span>Lokasi</span><b>Palembang, Indonesia</b></div>
+          </div>
+          <div class="meta-item">
+            <i class="fas fa-phone"></i>
+            <div><span>Telepon</span><b>+62 822 1840 2186</b></div>
+          </div>
+          <div class="meta-item">
+            <i class="fas fa-envelope"></i>
+            <div><span>Email</span><b>mrp.pratama6@gmail.com</b></div>
+          </div>
+          <div class="meta-item">
+            <i class="fas fa-briefcase"></i>
+            <div><span>Status</span><b class="status-open">Available for Hire</b></div>
+          </div>
         </div>
-        <div class="about-content">
-          <div class="about-image-wrap" data-aos>
-            <div class="about-img-frame">
-              <img src="FotoPorto.jpg" alt="Foto Pratama" id="aboutProfileImg" />
-              <div class="about-img-decoration"></div>
-            </div>
-            <div class="about-experience-card">
-              <span class="exp-number">3+</span>
-              <span class="exp-text">Tahun<br/>Pengalaman</span>
-            </div>
-          </div>
-          <div class="about-text" data-aos>
-            <h3 class="about-name">Muhammad Ramadhan Putra Pratama</h3>
-            <p class="about-role">Digital Creator & Developer</p>
-            <p class="about-desc">
-              Saya adalah seorang <strong>digital kreator multidisipliner</strong> dengan
-              keahlian di bidang Web Development, UI/UX Design, Pengembangan Aplikasi,
-              Desain Grafis, Video Editing, dan Live Streaming Operation.
-            </p>
-            <p class="about-desc">
-              Berpengalaman dalam berbagai proyek kreatif dan teknis, saya terbiasa
-              menggabungkan estetika desain dengan fungsionalitas teknologi untuk menciptakan
-              solusi yang <strong>impactful</strong> dan <strong>user-friendly</strong>.
-            </p>
-            <div class="about-info-grid">
-              <div class="info-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <div>
-                  <span class="info-label">Lokasi</span>
-                  <span class="info-value">Palembang, Indonesia</span>
-                </div>
-              </div>
-              <div class="info-item">
-                <i class="fas fa-phone"></i>
-                <div>
-                  <span class="info-label">Telepon</span>
-                  <span class="info-value">+62 822 1840 2186</span>
-                </div>
-              </div>
-              <div class="info-item">
-                <i class="fas fa-envelope"></i>
-                <div>
-                  <span class="info-label">Email</span>
-                  <span class="info-value">mrp.pratama6@gmail.com</span>
-                </div>
-              </div>
-              <div class="info-item">
-                <i class="fas fa-briefcase"></i>
-                <div>
-                  <span class="info-label">Status</span>
-                  <span class="info-value">Available for Hire</span>
-                </div>
-              </div>
-            </div>
-            <div class="about-actions">
-              <a href="#contact" class="btn btn-primary" id="aboutCTA"><i class="fas fa-paper-plane"></i> Hire Me</a>
-              <a href="#portfolio" class="btn btn-outline" id="aboutPortfolio"><i class="fas fa-eye"></i> Lihat Karya</a>
-            </div>
-          </div>
+
+        <div class="about-cta">
+          <a href="#contact"   class="btn btn-primary" id="aboutHire"><i class="fas fa-paper-plane"></i> Hire Me</a>
+          <a href="#portfolio" class="btn btn-ghost"   id="aboutWork"><i class="fas fa-eye"></i> Lihat Karya</a>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- ===== SKILLS SECTION ===== -->
-    <section id="skills" class="skills-section section-padding">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Keahlian Saya</h2>
-          <p class="section-subtitle">Beragam bidang yang saya kuasai dan terus kembangkan</p>
-        </div>
-        <div class="skills-grid">
-          <div class="skill-card" data-aos>
-            <div class="skill-icon-wrap"><i class="fas fa-laptop-code"></i></div>
-            <h3>Web Development</h3>
-            <p>Membangun website modern, responsif, dan performan menggunakan teknologi terkini.</p>
-            <div class="skill-tags-wrap">
-              <span class="skill-chip">HTML/CSS</span>
-              <span class="skill-chip">JavaScript</span>
-              <span class="skill-chip">React</span>
-              <span class="skill-chip">Firebase</span>
-            </div>
-          </div>
-          <div class="skill-card" data-aos>
-            <div class="skill-icon-wrap"><i class="fas fa-palette"></i></div>
-            <h3>UI/UX Design</h3>
-            <p>Merancang antarmuka yang intuitif dan pengalaman pengguna yang menyenangkan.</p>
-            <div class="skill-tags-wrap">
-              <span class="skill-chip">Figma</span>
-              <span class="skill-chip">Wireframing</span>
-              <span class="skill-chip">Prototyping</span>
-            </div>
-          </div>
-          <div class="skill-card" data-aos>
-            <div class="skill-icon-wrap"><i class="fas fa-mobile-alt"></i></div>
-            <h3>App Development</h3>
-            <p>Mengembangkan aplikasi mobile berbasis AR yang inovatif dan interaktif.</p>
-            <div class="skill-tags-wrap">
-              <span class="skill-chip">Android</span>
-              <span class="skill-chip">AR/Unity</span>
-              <span class="skill-chip">Vuforia</span>
-            </div>
-          </div>
-          <div class="skill-card" data-aos>
-            <div class="skill-icon-wrap"><i class="fas fa-pen-nib"></i></div>
-            <h3>Graphic Design</h3>
-            <p>Menciptakan identitas visual yang kuat dan konten kreatif yang memukau.</p>
-            <div class="skill-tags-wrap">
-              <span class="skill-chip">Photoshop</span>
-              <span class="skill-chip">Illustrator</span>
-              <span class="skill-chip">Canva</span>
-            </div>
-          </div>
-          <div class="skill-card" data-aos>
-            <div class="skill-icon-wrap"><i class="fas fa-film"></i></div>
-            <h3>Video Editing</h3>
-            <p>Memproduksi konten video sinematik berkualitas tinggi untuk berbagai kebutuhan.</p>
-            <div class="skill-tags-wrap">
-              <span class="skill-chip">Premiere Pro</span>
-              <span class="skill-chip">After Effects</span>
-              <span class="skill-chip">CapCut</span>
-            </div>
-          </div>
-          <div class="skill-card" data-aos>
-            <div class="skill-icon-wrap"><i class="fas fa-broadcast-tower"></i></div>
-            <h3>Live Streaming</h3>
-            <p>Mengelola operasional live streaming event secara profesional dan lancar.</p>
-            <div class="skill-tags-wrap">
-              <span class="skill-chip">OBS Studio</span>
-              <span class="skill-chip">vMix</span>
-              <span class="skill-chip">YouTube Live</span>
-            </div>
-          </div>
+<!-- ════════════════════ SKILLS ════════════════════ -->
+<section id="skills" class="skills sp">
+  <div class="container">
+    <div class="sec-hd">
+      <h2 class="sec-title">Keahlian Saya</h2>
+      <p class="sec-sub">Beragam bidang yang saya kuasai dan terus kembangkan</p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="sk-card" data-aos>
+        <div class="sk-icon"><i class="fas fa-laptop-code"></i></div>
+        <h3>Web Development</h3>
+        <p>Website modern, responsif, dan performan menggunakan teknologi terkini.</p>
+        <div class="sk-chips">
+          <span>HTML/CSS</span><span>JavaScript</span><span>React</span><span>Firebase</span>
         </div>
       </div>
-    </section>
-
-    <!-- ===== PORTFOLIO SECTION ===== -->
-    <section id="portfolio" class="portfolio section-padding">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Portofolio</h2>
-          <p class="section-subtitle">Koleksi proyek terbaik yang pernah saya kerjakan</p>
-        </div>
-
-        <div class="filter-wrap">
-          <div class="filter-buttons" role="group" aria-label="Portfolio filter">
-            <button class="filter-btn active" data-filter="all"     id="filterAll">Semua</button>
-            <button class="filter-btn"         data-filter="web"     id="filterWeb">Website</button>
-            <button class="filter-btn"         data-filter="app"     id="filterApp">App Dev</button>
-            <button class="filter-btn"         data-filter="video"   id="filterVideo">Video</button>
-            <button class="filter-btn"         data-filter="graphic" id="filterGraphic">Grafis</button>
-            <button class="filter-btn"         data-filter="lso"     id="filterLSO">Live Streaming</button>
-          </div>
-        </div>
-
-        <div class="portfolio-grid" id="portfolioGrid">
-
-          <div class="portfolio-card" data-category="web" data-aos>
-            <div class="portfolio-img-wrap">
-              <img src="webpm.jpg" alt="Website PM Fried Chicken" loading="lazy" />
-              <div class="portfolio-overlay">
-                <div class="overlay-content">
-                  <span class="portfolio-tag">Website</span>
-                  <h3>Website PM Fried Chicken</h3>
-                  <p>Website Catalog Produk dan Pemesanan PM Fried Chicken</p>
-                  <a href="https://pm-fried-chicken.vercel.app/" target="_blank" rel="noopener" class="overlay-btn" id="projectPMFC">
-                    <i class="fas fa-external-link-alt"></i> Lihat Proyek
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio-info">
-              <span class="portfolio-category-badge web">Web</span>
-              <h3>Website PM Fried Chicken</h3>
-            </div>
-          </div>
-
-          <div class="portfolio-card" data-category="app" data-aos>
-            <div class="portfolio-img-wrap">
-              <img src="Lalapedia.jpg" alt="LalaPedia" loading="lazy" />
-              <div class="portfolio-overlay">
-                <div class="overlay-content">
-                  <span class="portfolio-tag">App Dev</span>
-                  <h3>LalaPedia</h3>
-                  <p>Aplikasi Edukasi Lalapan Khas Indonesia berbasis Augmented Reality</p>
-                  <a href="#" class="overlay-btn" id="projectLalapedia">
-                    <i class="fas fa-info-circle"></i> Detail Proyek
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio-info">
-              <span class="portfolio-category-badge app">App</span>
-              <h3>LalaPedia AR</h3>
-            </div>
-          </div>
-
-          <div class="portfolio-card" data-category="app" data-aos>
-            <div class="portfolio-img-wrap">
-              <img src="FAR.jpg" alt="Ekspor Fasilkom AR" loading="lazy" />
-              <div class="portfolio-overlay">
-                <div class="overlay-content">
-                  <span class="portfolio-tag">App Dev</span>
-                  <h3>Ekspor Fasilkom AR</h3>
-                  <p>Aplikasi Pengenalan Fasilkom UNSRI berbasis Augmented Reality</p>
-                  <a href="#" class="overlay-btn" id="projectFAR">
-                    <i class="fas fa-info-circle"></i> Detail Proyek
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio-info">
-              <span class="portfolio-category-badge app">App</span>
-              <h3>Ekspor Fasilkom AR</h3>
-            </div>
-          </div>
-
-          <div class="portfolio-card" data-category="video" data-aos>
-            <div class="portfolio-img-wrap">
-              <img src="ProfOrmawaF.jpg" alt="Profil Ormawa Fasilkom" loading="lazy" />
-              <div class="portfolio-overlay">
-                <div class="overlay-content">
-                  <span class="portfolio-tag">Video</span>
-                  <h3>Profil Ormawa Fasilkom</h3>
-                  <p>Video Profil Ormawa Fasilkom UNSRI</p>
-                  <a href="https://youtu.be/acAdcMC0pOI?si=JtwlgcbvUsDU02m5" target="_blank" rel="noopener" class="overlay-btn" id="projectOrmawa">
-                    <i class="fab fa-youtube"></i> Tonton Video
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio-info">
-              <span class="portfolio-category-badge video">Video</span>
-              <h3>Profil Ormawa Fasilkom</h3>
-            </div>
-          </div>
-
-          <div class="portfolio-card" data-category="video" data-aos>
-            <div class="portfolio-img-wrap">
-              <img src="AfterMoviePK2.jpg" alt="After Movie PKKMB 2023" loading="lazy" />
-              <div class="portfolio-overlay">
-                <div class="overlay-content">
-                  <span class="portfolio-tag">Video</span>
-                  <h3>After Movie PKKMB 2023</h3>
-                  <p>Video After Movie PKKMB Fasilkom 2023</p>
-                  <a href="https://youtu.be/g1J2L5u9hSY?si=2R4-oSXQs7pmnMoE" target="_blank" rel="noopener" class="overlay-btn" id="projectPKKMB">
-                    <i class="fab fa-youtube"></i> Tonton Video
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio-info">
-              <span class="portfolio-category-badge video">Video</span>
-              <h3>After Movie PKKMB Fasilkom</h3>
-            </div>
-          </div>
-
-          <div class="portfolio-card" data-category="graphic" data-aos>
-            <div class="portfolio-img-wrap">
-              <img src="RPM.jpg" alt="Rebranding PM Fried Chicken" loading="lazy" />
-              <div class="portfolio-overlay">
-                <div class="overlay-content">
-                  <span class="portfolio-tag">Grafis</span>
-                  <h3>Rebranding PM Fried Chicken</h3>
-                  <p>Membuat Logo dan Redesign Konsep Outlet PM Fried Chicken</p>
-                  <a href="#" class="overlay-btn" id="projectRPM">
-                    <i class="fas fa-info-circle"></i> Detail Proyek
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio-info">
-              <span class="portfolio-category-badge graphic">Grafis</span>
-              <h3>Rebranding PM Fried Chicken</h3>
-            </div>
-          </div>
-
-          <div class="portfolio-card" data-category="lso" data-aos>
-            <div class="portfolio-img-wrap">
-              <img src="LSOT.jpg" alt="LSO Techporia 2023-2024" loading="lazy" />
-              <div class="portfolio-overlay">
-                <div class="overlay-content">
-                  <span class="portfolio-tag">Live Streaming</span>
-                  <h3>LSO Techporia 2023-2024</h3>
-                  <p>Live Streaming Operator Event Technology Euphoria 2023-2024</p>
-                  <a href="https://www.youtube.com/live/TzOh_Jqm9QI?si=vl5Vx-earD_f60s-" target="_blank" rel="noopener" class="overlay-btn" id="projectLSOT">
-                    <i class="fab fa-youtube"></i> Tonton Live
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio-info">
-              <span class="portfolio-category-badge lso">LSO</span>
-              <h3>LSO Techporia 2023-2024</h3>
-            </div>
-          </div>
-
-          <div class="portfolio-card" data-category="lso" data-aos>
-            <div class="portfolio-img-wrap">
-              <img src="LSOY.jpg" alt="LSO Yudisium Fasilkom 74-75" loading="lazy" />
-              <div class="portfolio-overlay">
-                <div class="overlay-content">
-                  <span class="portfolio-tag">Live Streaming</span>
-                  <h3>LSO Yudisium Fasilkom</h3>
-                  <p>Live Streaming Operator Event Yudisium Fasilkom 74-75</p>
-                  <a href="https://www.youtube.com/live/0ZjVnGVpNS0?si=W0G0MonsOw3g4rGZ" target="_blank" rel="noopener" class="overlay-btn" id="projectLSOY">
-                    <i class="fab fa-youtube"></i> Tonton Live
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio-info">
-              <span class="portfolio-category-badge lso">LSO</span>
-              <h3>LSO Yudisium Fasilkom 74-75</h3>
-            </div>
-          </div>
-
+      <div class="sk-card" data-aos>
+        <div class="sk-icon"><i class="fas fa-palette"></i></div>
+        <h3>UI/UX Design</h3>
+        <p>Antarmuka yang intuitif dan pengalaman pengguna yang menyenangkan.</p>
+        <div class="sk-chips">
+          <span>Figma</span><span>Wireframing</span><span>Prototyping</span>
         </div>
       </div>
-    </section>
-
-    <!-- ===== CONTACT SECTION ===== -->
-    <section id="contact" class="contact section-padding">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Hubungi Saya</h2>
-          <p class="section-subtitle">Punya proyek menarik? Saya siap mewujudkannya bersama Anda</p>
+      <div class="sk-card" data-aos>
+        <div class="sk-icon"><i class="fas fa-mobile-alt"></i></div>
+        <h3>App Development</h3>
+        <p>Aplikasi mobile berbasis AR yang inovatif dan interaktif.</p>
+        <div class="sk-chips">
+          <span>Android</span><span>AR/Unity</span><span>Vuforia</span>
         </div>
-        <div class="contact-content">
-          <div class="contact-info-wrap" data-aos>
-            <div class="contact-card">
-              <h3 class="contact-info-title">Informasi Kontak</h3>
-              <div class="contact-item">
-                <div class="contact-icon-wrap"><i class="fas fa-envelope"></i></div>
-                <div class="contact-detail">
-                  <span class="contact-label">Email</span>
-                  <a href="mailto:mrp.pratama6@gmail.com" class="contact-value" id="contactEmail">mrp.pratama6@gmail.com</a>
-                </div>
-              </div>
-              <div class="contact-item">
-                <div class="contact-icon-wrap"><i class="fas fa-phone"></i></div>
-                <div class="contact-detail">
-                  <span class="contact-label">Telepon</span>
-                  <a href="tel:+6282218402186" class="contact-value" id="contactPhone">+62 822 1840 2186</a>
-                </div>
-              </div>
-              <div class="contact-item">
-                <div class="contact-icon-wrap"><i class="fas fa-map-marker-alt"></i></div>
-                <div class="contact-detail">
-                  <span class="contact-label">Lokasi</span>
-                  <span class="contact-value">Palembang, Indonesia</span>
-                </div>
-              </div>
-              <div class="social-section">
-                <h4 class="social-title">Temukan Saya di</h4>
-                <div class="social-links">
-                  <a href="https://www.facebook.com/share/1BUSZmmym9/?mibextid=qi2Omg" target="_blank" rel="noopener" class="social-btn facebook" id="socialFacebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                  <a href="https://www.youtube.com/@mrppratama"                          target="_blank" rel="noopener" class="social-btn youtube"   id="socialYoutube"  aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                  <a href="https://www.instagram.com/mrppratam4?igsh=cWpxZzRjZTBrb2Rl" target="_blank" rel="noopener" class="social-btn instagram" id="socialInstagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/muhammadramadhanputrapratama"     target="_blank" rel="noopener" class="social-btn linkedin"  id="socialLinkedIn"  aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                  <a href="https://github.com/mrppratama"                                target="_blank" rel="noopener" class="social-btn github"    id="socialGithub"   aria-label="GitHub"><i class="fab fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+      </div>
+      <div class="sk-card" data-aos>
+        <div class="sk-icon"><i class="fas fa-pen-nib"></i></div>
+        <h3>Graphic Design</h3>
+        <p>Identitas visual yang kuat dan konten kreatif yang memukau.</p>
+        <div class="sk-chips">
+          <span>Photoshop</span><span>Illustrator</span><span>Canva</span>
+        </div>
+      </div>
+      <div class="sk-card" data-aos>
+        <div class="sk-icon"><i class="fas fa-film"></i></div>
+        <h3>Video Editing</h3>
+        <p>Konten video sinematik berkualitas tinggi untuk berbagai kebutuhan.</p>
+        <div class="sk-chips">
+          <span>Premiere Pro</span><span>After Effects</span><span>CapCut</span>
+        </div>
+      </div>
+      <div class="sk-card" data-aos>
+        <div class="sk-icon"><i class="fas fa-broadcast-tower"></i></div>
+        <h3>Live Streaming</h3>
+        <p>Operasional live streaming event secara profesional dan lancar.</p>
+        <div class="sk-chips">
+          <span>OBS Studio</span><span>vMix</span><span>YouTube Live</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-          <div class="contact-form-wrap" data-aos>
-            <form class="contact-form" id="contactForm" novalidate>
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="contactName">Nama Lengkap</label>
-                  <div class="input-wrap">
-                    <i class="fas fa-user"></i>
-                    <input type="text" id="contactName" name="name" placeholder="Masukkan nama Anda" required />
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="contactEmailInput">Email</label>
-                  <div class="input-wrap">
-                    <i class="fas fa-envelope"></i>
-                    <input type="email" id="contactEmailInput" name="email" placeholder="email@contoh.com" required />
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="contactSubject">Subjek</label>
-                <div class="input-wrap">
-                  <i class="fas fa-tag"></i>
-                  <input type="text" id="contactSubject" name="subject" placeholder="Topik pesan Anda" />
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="contactMessage">Pesan</label>
-                <div class="input-wrap textarea-wrap">
-                  <i class="fas fa-comment-alt"></i>
-                  <textarea id="contactMessage" name="message" placeholder="Tuliskan pesan Anda di sini..." rows="5" required></textarea>
-                </div>
-              </div>
-              <button type="submit" class="btn btn-primary btn-full" id="submitContactForm">
-                <i class="fas fa-paper-plane"></i>
-                <span>Kirim Pesan</span>
-                <div class="btn-loader" id="btnLoader"></div>
-              </button>
-              <div class="form-success" id="formSuccess">
-                <i class="fas fa-check-circle"></i>
-                <span>Pesan berhasil dikirim! Saya akan segera menghubungi Anda.</span>
-              </div>
-            </form>
+<!-- ════════════════════ PORTFOLIO ════════════════════ -->
+<section id="portfolio" class="portfolio sp">
+  <div class="container">
+    <div class="sec-hd">
+      <h2 class="sec-title">Portofolio</h2>
+      <p class="sec-sub">Koleksi proyek terbaik yang pernah saya kerjakan</p>
+    </div>
+
+    <div class="filters">
+      <button class="fb active" data-filter="all"     id="fAll">Semua</button>
+      <button class="fb"        data-filter="web"     id="fWeb">Website</button>
+      <button class="fb"        data-filter="app"     id="fApp">App Dev</button>
+      <button class="fb"        data-filter="video"   id="fVid">Video</button>
+      <button class="fb"        data-filter="graphic" id="fGfx">Grafis</button>
+      <button class="fb"        data-filter="lso"     id="fLso">Live Streaming</button>
+    </div>
+
+    <div class="port-grid" id="portGrid">
+
+      <div class="pc" data-category="web" data-aos>
+        <div class="pc-img">
+          <img src="webpm.jpg" alt="PM Fried Chicken" loading="lazy" />
+          <div class="pc-ov">
+            <span class="pc-tag">Website</span>
+            <h3>Website PM Fried Chicken</h3>
+            <p>Catalog Produk dan Pemesanan PM Fried Chicken</p>
+            <a href="https://pm-fried-chicken.vercel.app/" target="_blank" rel="noopener" id="pPMFC"><i class="fas fa-external-link-alt"></i> Lihat Proyek</a>
+          </div>
+        </div>
+        <div class="pc-foot">
+          <span class="pcb web">Web</span>
+          <h4>Website PM Fried Chicken</h4>
+        </div>
+      </div>
+
+      <div class="pc" data-category="app" data-aos>
+        <div class="pc-img">
+          <img src="Lalapedia.jpg" alt="LalaPedia" loading="lazy" />
+          <div class="pc-ov">
+            <span class="pc-tag">App Dev</span>
+            <h3>LalaPedia</h3>
+            <p>Edukasi Lalapan Khas Indonesia berbasis Augmented Reality</p>
+            <a href="#" id="pLala"><i class="fas fa-info-circle"></i> Detail Proyek</a>
+          </div>
+        </div>
+        <div class="pc-foot">
+          <span class="pcb app">App</span>
+          <h4>LalaPedia AR</h4>
+        </div>
+      </div>
+
+      <div class="pc" data-category="app" data-aos>
+        <div class="pc-img">
+          <img src="FAR.jpg" alt="Ekspor Fasilkom AR" loading="lazy" />
+          <div class="pc-ov">
+            <span class="pc-tag">App Dev</span>
+            <h3>Ekspor Fasilkom AR</h3>
+            <p>Pengenalan Fasilkom UNSRI berbasis Augmented Reality</p>
+            <a href="#" id="pFAR"><i class="fas fa-info-circle"></i> Detail Proyek</a>
+          </div>
+        </div>
+        <div class="pc-foot">
+          <span class="pcb app">App</span>
+          <h4>Ekspor Fasilkom AR</h4>
+        </div>
+      </div>
+
+      <div class="pc" data-category="video" data-aos>
+        <div class="pc-img">
+          <img src="ProfOrmawaF.jpg" alt="Profil Ormawa Fasilkom" loading="lazy" />
+          <div class="pc-ov">
+            <span class="pc-tag">Video</span>
+            <h3>Profil Ormawa Fasilkom</h3>
+            <p>Video Profil Ormawa Fasilkom UNSRI</p>
+            <a href="https://youtu.be/acAdcMC0pOI?si=JtwlgcbvUsDU02m5" target="_blank" rel="noopener" id="pOrmawa"><i class="fab fa-youtube"></i> Tonton Video</a>
+          </div>
+        </div>
+        <div class="pc-foot">
+          <span class="pcb video">Video</span>
+          <h4>Profil Ormawa Fasilkom</h4>
+        </div>
+      </div>
+
+      <div class="pc" data-category="video" data-aos>
+        <div class="pc-img">
+          <img src="AfterMoviePK2.jpg" alt="After Movie PKKMB 2023" loading="lazy" />
+          <div class="pc-ov">
+            <span class="pc-tag">Video</span>
+            <h3>After Movie PKKMB 2023</h3>
+            <p>Video After Movie PKKMB Fasilkom 2023</p>
+            <a href="https://youtu.be/g1J2L5u9hSY?si=2R4-oSXQs7pmnMoE" target="_blank" rel="noopener" id="pPKKMB"><i class="fab fa-youtube"></i> Tonton Video</a>
+          </div>
+        </div>
+        <div class="pc-foot">
+          <span class="pcb video">Video</span>
+          <h4>After Movie PKKMB Fasilkom</h4>
+        </div>
+      </div>
+
+      <div class="pc" data-category="graphic" data-aos>
+        <div class="pc-img">
+          <img src="RPM.jpg" alt="Rebranding PM Fried Chicken" loading="lazy" />
+          <div class="pc-ov">
+            <span class="pc-tag">Grafis</span>
+            <h3>Rebranding PM Fried Chicken</h3>
+            <p>Logo dan Redesign Konsep Outlet PM Fried Chicken</p>
+            <a href="#" id="pRPM"><i class="fas fa-info-circle"></i> Detail Proyek</a>
+          </div>
+        </div>
+        <div class="pc-foot">
+          <span class="pcb graphic">Grafis</span>
+          <h4>Rebranding PM Fried Chicken</h4>
+        </div>
+      </div>
+
+      <div class="pc" data-category="lso" data-aos>
+        <div class="pc-img">
+          <img src="LSOT.jpg" alt="LSO Techporia 2023-2024" loading="lazy" />
+          <div class="pc-ov">
+            <span class="pc-tag">Live Streaming</span>
+            <h3>LSO Techporia 2023–2024</h3>
+            <p>Live Streaming Operator Event Technology Euphoria 2023–2024</p>
+            <a href="https://www.youtube.com/live/TzOh_Jqm9QI?si=vl5Vx-earD_f60s-" target="_blank" rel="noopener" id="pLSOT"><i class="fab fa-youtube"></i> Tonton Live</a>
+          </div>
+        </div>
+        <div class="pc-foot">
+          <span class="pcb lso">LSO</span>
+          <h4>LSO Techporia 2023–2024</h4>
+        </div>
+      </div>
+
+      <div class="pc" data-category="lso" data-aos>
+        <div class="pc-img">
+          <img src="LSOY.jpg" alt="LSO Yudisium Fasilkom 74-75" loading="lazy" />
+          <div class="pc-ov">
+            <span class="pc-tag">Live Streaming</span>
+            <h3>LSO Yudisium Fasilkom</h3>
+            <p>Live Streaming Operator Event Yudisium Fasilkom 74–75</p>
+            <a href="https://www.youtube.com/live/0ZjVnGVpNS0?si=W0G0MonsOw3g4rGZ" target="_blank" rel="noopener" id="pLSOY"><i class="fab fa-youtube"></i> Tonton Live</a>
+          </div>
+        </div>
+        <div class="pc-foot">
+          <span class="pcb lso">LSO</span>
+          <h4>LSO Yudisium Fasilkom 74–75</h4>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════ CONTACT ════════════════════ -->
+<section id="contact" class="contact sp">
+  <div class="container">
+    <div class="sec-hd">
+      <h2 class="sec-title">Hubungi Saya</h2>
+      <p class="sec-sub">Punya proyek menarik? Saya siap berkolaborasi bersama Anda</p>
+    </div>
+
+    <div class="contact-grid">
+
+      <div class="ct-info" data-aos>
+        <h3>Informasi Kontak</h3>
+        <div class="ct-item">
+          <div class="ct-ico"><i class="fas fa-envelope"></i></div>
+          <div><span>Email</span>
+            <a href="mailto:mrp.pratama6@gmail.com" id="cEmail">mrp.pratama6@gmail.com</a>
+          </div>
+        </div>
+        <div class="ct-item">
+          <div class="ct-ico"><i class="fas fa-phone"></i></div>
+          <div><span>Telepon</span>
+            <a href="tel:+6282218402186" id="cPhone">+62 822 1840 2186</a>
+          </div>
+        </div>
+        <div class="ct-item">
+          <div class="ct-ico"><i class="fas fa-map-marker-alt"></i></div>
+          <div><span>Lokasi</span><p>Palembang, Indonesia</p></div>
+        </div>
+
+        <div class="ct-social">
+          <p>Temukan saya di</p>
+          <div class="socials">
+            <a href="https://www.facebook.com/share/1BUSZmmym9/?mibextid=qi2Omg" target="_blank" rel="noopener" class="soc fb"  id="sFb"  aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/@mrppratama"                          target="_blank" rel="noopener" class="soc yt"  id="sYt"  aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/mrppratam4?igsh=cWpxZzRjZTBrb2Rl" target="_blank" rel="noopener" class="soc ig"  id="sIg"  aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/muhammadramadhanputrapratama"     target="_blank" rel="noopener" class="soc li"  id="sLi"  aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/mrppratama"                                target="_blank" rel="noopener" class="soc gh"  id="sGh"  aria-label="GitHub"><i class="fab fa-github"></i></a>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- ===== FOOTER ===== -->
-    <footer id="mainFooter">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-brand">
-            <a href="#home" class="logo footer-logo">
-              <span class="logo-bracket">&lt;</span>PrataMana<span class="logo-bracket">/&gt;</span>
-            </a>
-            <p>Kreator digital yang bersemangat menciptakan pengalaman digital yang bermakna dan memukau.</p>
+      <form class="ct-form" id="contactForm" novalidate data-aos>
+        <div class="fg-row">
+          <div class="fg">
+            <label for="cName">Nama Lengkap</label>
+            <div class="fi"><i class="fas fa-user"></i><input type="text" id="cName" placeholder="Nama kamu" required /></div>
           </div>
-          <div class="footer-links">
-            <h4>Navigasi</h4>
-            <ul>
-              <li><a href="#home">Beranda</a></li>
-              <li><a href="#about">Tentang</a></li>
-              <li><a href="#skills">Keahlian</a></li>
-              <li><a href="#portfolio">Portofolio</a></li>
-              <li><a href="#contact">Kontak</a></li>
-            </ul>
-          </div>
-          <div class="footer-social">
-            <h4>Sosial Media</h4>
-            <div class="footer-social-links">
-              <a href="https://www.facebook.com/share/1BUSZmmym9/?mibextid=qi2Omg" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-              <a href="https://www.youtube.com/@mrppratama"                          target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-              <a href="https://www.instagram.com/mrppratam4?igsh=cWpxZzRjZTBrb2Rl" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-              <a href="https://www.linkedin.com/in/muhammadramadhanputrapratama"     target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-              <a href="https://github.com/mrppratama"                                target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            </div>
+          <div class="fg">
+            <label for="cMail">Email</label>
+            <div class="fi"><i class="fas fa-envelope"></i><input type="email" id="cMail" placeholder="email@kamu.com" required /></div>
           </div>
         </div>
-        <div class="footer-bottom">
-          <p>&copy; 2025 PrataMana Portfolio. Dibuat dengan <i class="fas fa-heart"></i> di Palembang.</p>
-          <button class="back-to-top" id="backToTop" aria-label="Back to top">
-            <i class="fas fa-arrow-up"></i>
-          </button>
+        <div class="fg">
+          <label for="cSubj">Subjek</label>
+          <div class="fi"><i class="fas fa-tag"></i><input type="text" id="cSubj" placeholder="Topik pesan" /></div>
+        </div>
+        <div class="fg">
+          <label for="cMsg">Pesan</label>
+          <div class="fi fi-ta"><i class="fas fa-comment-alt"></i><textarea id="cMsg" rows="5" placeholder="Tuliskan pesanmu…" required></textarea></div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full" id="cSubmit">
+          <i class="fas fa-paper-plane"></i><span>Kirim Pesan</span>
+          <span class="btn-spin" id="cSpin"></span>
+        </button>
+        <div class="ct-ok" id="ctOk">
+          <i class="fas fa-check-circle"></i> Pesan terkirim! Saya akan segera menghubungi Anda.
+        </div>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════ FOOTER ════════════════════ -->
+<footer id="mainFooter">
+  <div class="container">
+    <div class="ft-grid">
+      <div class="ft-brand">
+        <a href="#home" class="logo"><span class="logo-lt">&lt;</span>PrataMana<span class="logo-lt">/&gt;</span></a>
+        <p>Kreator digital yang bersemangat menciptakan pengalaman digital yang bermakna dan memukau.</p>
+      </div>
+      <div class="ft-nav">
+        <h4>Navigasi</h4>
+        <ul>
+          <li><a href="#home">Beranda</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#skills">Keahlian</a></li>
+          <li><a href="#portfolio">Portofolio</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </div>
+      <div class="ft-soc">
+        <h4>Sosial Media</h4>
+        <div class="ft-socials">
+          <a href="https://www.facebook.com/share/1BUSZmmym9/?mibextid=qi2Omg" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.youtube.com/@mrppratama"                          target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.instagram.com/mrppratam4?igsh=cWpxZzRjZTBrb2Rl" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/muhammadramadhanputrapratama"     target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/mrppratama"                                target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
         </div>
       </div>
-    </footer>
+    </div>
+    <div class="ft-bottom">
+      <p>&copy; 2025 PrataMana Portfolio &mdash; Dibuat dengan <i class="fas fa-heart"></i> di Palembang</p>
+      <button class="btt" id="backToTop" aria-label="Kembali ke atas"><i class="fas fa-arrow-up"></i></button>
+    </div>
+  </div>
+</footer>
 
-    <script src="script.js"></script>
-  </body>
+<script src="script.js"></script>
+</body>
 </html>
