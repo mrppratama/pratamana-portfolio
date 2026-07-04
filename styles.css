@@ -210,7 +210,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 .hero-grid{
   display:grid;
   grid-template-columns:1fr 1fr;
-  align-items:center;
+  align-items:flex-start;
   gap:60px;
 }
 
@@ -310,21 +310,21 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 .hs-sep{width:1px;height:36px;background:var(--c-bd)}
 
 /* ── Hero Right ── */
-.hero-right{display:flex;align-items:center;justify-content:center}
-.photo-frame{position:relative;width:360px;height:360px;display:flex;align-items:center;justify-content:center}
+.hero-right{display:flex;align-items:center;justify-content:center;padding-top:56px}
+.photo-frame{position:relative;width:480px;height:480px;display:flex;align-items:center;justify-content:center}
 .photo-ring{
   position:absolute;border-radius:50%;
   border:1px solid rgba(37,99,235,.18);
   animation:ringpulse 4s ease-in-out infinite;
 }
-.r1{width:340px;height:340px}
-.r2{width:274px;height:274px;border-color:rgba(6,182,212,.13);animation-delay:-1.6s}
-.r3{width:208px;height:208px;border-color:rgba(37,99,235,.26);animation-delay:-3.2s}
+.r1{width:460px;height:460px}
+.r2{width:368px;height:368px;border-color:rgba(6,182,212,.13);animation-delay:-1.6s}
+.r3{width:278px;height:278px;border-color:rgba(37,99,235,.26);animation-delay:-3.2s}
 @keyframes ringpulse{0%,100%{transform:scale(1);opacity:.7}50%{transform:scale(1.04);opacity:1}}
 .photo-wrap{
-  width:210px;height:210px;border-radius:50%;overflow:hidden;
+  width:290px;height:290px;border-radius:50%;overflow:hidden;
   border:4px solid rgba(37,99,235,.38);
-  box-shadow:var(--sh-bl),0 0 60px rgba(37,99,235,.15);
+  box-shadow:var(--sh-bl),0 0 70px rgba(37,99,235,.18);
   z-index:2;position:relative;transition:var(--tr-slow);
 }
 .photo-wrap:hover{transform:scale(1.05);box-shadow:0 0 0 5px rgba(37,99,235,.3),0 0 60px rgba(37,99,235,.3)}
@@ -605,11 +605,11 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
   .hero-avail,.role-box,.hero-cta,.hero-stats{justify-content:center}
   .hero-bio{margin-left:auto;margin-right:auto}
   .role-box{justify-content:center}
-  .photo-frame{width:280px;height:280px}
-  .r1{width:265px;height:265px}
-  .r2{width:212px;height:212px}
-  .r3{width:160px;height:160px}
-  .photo-wrap{width:170px;height:170px}
+  .photo-frame{width:320px;height:320px}
+  .r1{width:305px;height:305px}
+  .r2{width:244px;height:244px}
+  .r3{width:185px;height:185px}
+  .photo-wrap{width:200px;height:200px}
   .about-grid{grid-template-columns:1fr;gap:52px}
   .about-photo{max-width:400px;margin:0 auto}
   .about-meta{grid-template-columns:1fr}
