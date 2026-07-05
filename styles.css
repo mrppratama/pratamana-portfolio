@@ -176,6 +176,31 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
   color:var(--c-t2);font-size:.95rem;transition:var(--tr);
 }
 .btn-icon:hover{background:rgba(37,99,235,.18);color:var(--c-blue2);transform:rotate(20deg)}
+
+/* Language Switcher */
+.lang-switcher { position: relative; display: flex; align-items: center; }
+.lang-btn {
+  background: rgba(37,99,235,.08); border: 1px solid var(--c-bd);
+  color: var(--c-t2); font-size: .88rem; font-weight: 600;
+  padding: 8px 14px; border-radius: 10px; cursor: pointer; transition: var(--tr);
+  display: flex; align-items: center; gap: 6px;
+}
+.lang-btn:hover { background: rgba(37,99,235,.18); color: var(--c-blue2); }
+.lang-dropdown {
+  position: absolute; top: 120%; right: 0;
+  background: var(--c-bg0); border: 1px solid var(--c-bd);
+  border-radius: 12px; padding: 6px; min-width: 150px;
+  box-shadow: var(--sh-md); opacity: 0; visibility: hidden;
+  transform: translateY(-10px); transition: var(--tr); z-index: 1000;
+}
+.lang-dropdown.show { opacity: 1; visibility: visible; transform: translateY(0); }
+.lang-option {
+  width: 100%; text-align: left; background: none; border: none;
+  padding: 8px 12px; font-size: .85rem; color: var(--c-t1);
+  border-radius: 6px; cursor: pointer; transition: var(--tr);
+}
+.lang-option:hover { background: rgba(37,99,235,.1); color: var(--c-blue2); }
+
 .hamburger{
   display:none;flex-direction:column;gap:5px;
   width:40px;height:40px;align-items:center;justify-content:center;
@@ -670,3 +695,26 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
   .about-cta{flex-direction:column}
   .ft-bottom{flex-direction:column;gap:14px;text-align:center}
 }
+
+/* ─── RTL SUPPORT (ARABIC) ─── */
+html[dir="rtl"] { text-align: right; }
+html[dir="rtl"] .logo-lt { display: inline-block; }
+html[dir="rtl"] .hero-left { text-align: right; }
+html[dir="rtl"] .hero-stats, html[dir="rtl"] .hero-cta { flex-direction: row; }
+html[dir="rtl"] .hs-item { align-items: flex-start; }
+html[dir="rtl"] .ct-info h3, html[dir="rtl"] .ct-info p { text-align: right; }
+html[dir="rtl"] .lang-option { text-align: right; }
+html[dir="rtl"] .ct-item { flex-direction: row; }
+html[dir="rtl"] .ct-ico { margin-left: 12px; margin-right: 0; }
+html[dir="rtl"] .about-meta, html[dir="rtl"] .about-cta { justify-content: flex-start; }
+html[dir="rtl"] .meta-item { flex-direction: row; }
+html[dir="rtl"] .meta-item i { margin-left: 14px; margin-right: 0; }
+html[dir="rtl"] .sk-card, html[dir="rtl"] .exp-item { text-align: right; }
+html[dir="rtl"] .exp-head-left { flex-direction: row; }
+html[dir="rtl"] .exp-dot { margin-left: 14px; margin-right: 0; }
+html[dir="rtl"] .exp-tags, html[dir="rtl"] .sk-chips { justify-content: flex-start; }
+html[dir="rtl"] .pc-ov { text-align: right; }
+html[dir="rtl"] .pc-foot { flex-direction: row; }
+html[dir="rtl"] .ct-form .fi i { right: 15px; left: auto; }
+html[dir="rtl"] .ct-form .fi input, html[dir="rtl"] .ct-form .fi textarea { padding: 13px 40px 13px 15px; }
+html[dir="rtl"] .lang-dropdown { left: 0; right: auto; }

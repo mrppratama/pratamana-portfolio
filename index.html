@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="id" data-theme="dark">
+<html lang="en" data-theme="dark">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
-    content="Muhammad Ramadhan Putra Pratama — Fresh Graduate Information Systems UNSRI | QA Engineer | UI/UX Designer | Graphic Designer | Video Editor | Live Streaming Operator | Palembang, Indonesia." />
+    content="Muhammad Ramadhan Putra Pratama — QA Engineer | UI/UX Designer | Graphic Designer | Video Editor | Live Streaming Operator | Palembang, Indonesia." />
   <meta name="keywords"
-    content="portfolio, quality assurance, UI/UX designer, web developer, graphic design, video editor, live streaming, Palembang, Pratama, UNSRI" />
+    content="portfolio, quality assurance, UI/UX designer, web developer, graphic design, video editor, live streaming, Palembang, Pratama" />
   <meta name="author" content="Muhammad Ramadhan Putra Pratama" />
   <title>PrataMana | Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,21 +25,33 @@
   <!-- ════════════════════ HEADER ════════════════════ -->
   <header id="mainHeader">
     <div class="container nav-container">
-      <a href="#home" class="logo">
+      <a href="#home" class="logo" dir="ltr">
         <span class="logo-lt">&lt;</span>PrataMana<span class="logo-lt">/&gt;</span>
       </a>
-      <nav id="navLinks" aria-label="Navigasi">
+      <nav id="navLinks" aria-label="Navigation">
         <ul>
-          <li><a href="#home"      class="nav-item" id="n-home">Beranda</a></li>
-          <li><a href="#about"     class="nav-item" id="n-about">Tentang</a></li>
-          <li><a href="#skills"    class="nav-item" id="n-skills">Keahlian</a></li>
-          <li><a href="#experience"class="nav-item" id="n-exp">Pengalaman</a></li>
-          <li><a href="#portfolio" class="nav-item" id="n-port">Portofolio</a></li>
-          <li><a href="#contact"   class="nav-item" id="n-contact">Kontak</a></li>
+          <li><a href="#home"       class="nav-item" id="n-home" data-i18n="nav_home">Home</a></li>
+          <li><a href="#about"      class="nav-item" id="n-about" data-i18n="nav_about">About</a></li>
+          <li><a href="#skills"     class="nav-item" id="n-skills" data-i18n="nav_skills">Skills</a></li>
+          <li><a href="#experience" class="nav-item" id="n-exp" data-i18n="nav_exp">Experience</a></li>
+          <li><a href="#portfolio"  class="nav-item" id="n-port" data-i18n="nav_port">Portfolio</a></li>
+          <li><a href="#contact"    class="nav-item" id="n-contact" data-i18n="nav_contact">Contact</a></li>
         </ul>
       </nav>
       <div class="nav-right">
-        <button id="themeToggle" class="btn-icon" aria-label="Ganti tema" title="Ganti Tema">
+        <!-- Language Switcher -->
+        <div class="lang-switcher">
+          <button class="lang-btn" id="langBtn" aria-label="Change Language">
+            <i class="fas fa-globe"></i> <span id="currentLang">EN</span>
+          </button>
+          <div class="lang-dropdown" id="langDropdown">
+            <button class="lang-option" data-lang="en">English</button>
+            <button class="lang-option" data-lang="id">Bahasa Indonesia</button>
+            <button class="lang-option" data-lang="ar">العربية (Arabic)</button>
+          </div>
+        </div>
+        
+        <button id="themeToggle" class="btn-icon" aria-label="Toggle theme" title="Toggle Theme">
           <i class="fas fa-sun" id="themeIcon"></i>
         </button>
         <button id="hamburgerBtn" class="hamburger" aria-label="Menu" aria-expanded="false">
@@ -62,15 +74,15 @@
       <div class="hero-left">
         <div class="hero-avail">
           <span class="avail-dot"></span>
-          <span>Open to Work &amp; Collaboration</span>
+          <span data-i18n="hero_avail">Open to Work &amp; Collaboration</span>
         </div>
 
-        <p class="hero-greeting">Halo, saya</p>
-        <h1 class="hero-name">Muhammad<br><span class="name-hi">Ramadhan Putra Pratama</span></h1>
+        <p class="hero-greeting" data-i18n="hero_greeting">Hello, I'm</p>
+        <h1 class="hero-name" dir="ltr">Muhammad<br><span class="name-hi">Ramadhan Putra Pratama</span></h1>
 
         <!-- ROLE SWITCHER — 1 at a time -->
-        <div class="role-box">
-          <span class="role-prefix">Seorang&nbsp;</span>
+        <div class="role-box" dir="ltr">
+          <span class="role-prefix" data-i18n="hero_role_prefix">A&nbsp;</span>
           <div class="role-stage" id="roleStage" aria-live="polite">
             <span class="role-item">QA Engineer</span>
             <span class="role-item">UI/UX Designer</span>
@@ -81,36 +93,33 @@
           </div>
         </div>
 
-        <p class="hero-bio">
-          Fresh graduate Sistem Informasi Universitas Sriwijaya (IPK <strong>3.90</strong>)
-          yang passionate dalam membangun produk digital berkualitas tinggi —
-          dari <strong>Quality Assurance Engineering</strong> hingga
-          <strong>UI/UX Design</strong> yang user-centered dan berdampak nyata.
+        <p class="hero-bio" data-i18n="hero_bio">
+          A passionate digital creator dedicated to building high-quality digital products — from <strong>Quality Assurance Engineering</strong> to user-centered <strong>UI/UX Design</strong> that makes a real impact.
         </p>
 
         <div class="hero-cta">
           <a href="#portfolio" class="btn btn-primary" id="heroCTAPortfolio">
-            <i class="fas fa-briefcase"></i> Lihat Portofolio
+            <i class="fas fa-briefcase"></i> <span data-i18n="hero_cta_port">View Portfolio</span>
           </a>
           <a href="#contact" class="btn btn-ghost" id="heroCTAContact">
-            <i class="fas fa-paper-plane"></i> Hubungi Saya
+            <i class="fas fa-paper-plane"></i> <span data-i18n="hero_cta_contact">Contact Me</span>
           </a>
         </div>
 
         <div class="hero-stats">
           <div class="hs-item">
             <span class="hs-num" data-target="8">0+</span>
-            <span class="hs-lbl">Proyek Selesai</span>
+            <span class="hs-lbl" data-i18n="stat_projects">Completed Projects</span>
           </div>
           <span class="hs-sep"></span>
           <div class="hs-item">
             <span class="hs-num" data-target="6">0+</span>
-            <span class="hs-lbl">Bidang Keahlian</span>
+            <span class="hs-lbl" data-i18n="stat_skills">Core Skills</span>
           </div>
           <span class="hs-sep"></span>
           <div class="hs-item">
-            <span class="hs-num" data-target="390">0</span>
-            <span class="hs-lbl">IPK (dari 4.00)</span>
+            <span class="hs-num" data-target="3">0+</span>
+            <span class="hs-lbl" data-i18n="stat_exp">Years Experience</span>
           </div>
         </div>
       </div>
@@ -133,7 +142,7 @@
 
     <div class="scroll-hint">
       <div class="scroll-line"></div>
-      <span>Scroll</span>
+      <span data-i18n="scroll">Scroll</span>
     </div>
   </section>
 
@@ -141,8 +150,8 @@
   <section id="about" class="about sp">
     <div class="container">
       <div class="sec-hd">
-        <h2 class="sec-title">Tentang Saya</h2>
-        <p class="sec-sub">Mengenal lebih dekat sosok di balik karya-karya digital ini</p>
+        <h2 class="sec-title" data-i18n="about_title">About Me</h2>
+        <p class="sec-sub" data-i18n="about_sub">Get to know the person behind the digital creations</p>
       </div>
 
       <div class="about-grid">
@@ -152,50 +161,39 @@
             <div class="ap-overlay"></div>
           </div>
           <div class="ap-badge">
-            <span class="ap-num">3.90</span>
-            <span class="ap-lbl">IPK<br>UNSRI</span>
+            <span class="ap-num">3+</span>
+            <span class="ap-lbl" data-i18n="about_badge">Years<br>Experience</span>
           </div>
         </div>
 
         <div class="about-body" data-aos>
-          <span class="about-tag">Fresh Graduate · Information Systems · UNSRI</span>
-          <h3 class="about-name">Muhammad Ramadhan<br>Putra Pratama</h3>
+          <span class="about-tag" data-i18n="about_tag">Digital Creator &amp; QA Engineer</span>
+          <h3 class="about-name" dir="ltr">Muhammad Ramadhan<br>Putra Pratama</h3>
 
-          <p class="about-p">
-            Hi! Saya adalah fresh graduate <strong>Sistem Informasi Universitas Sriwijaya</strong>
-            dengan IPK <strong>3.90</strong>. Saya passionate dalam membangun produk digital
-            yang reliable dan user-centered, dengan fokus utama di
-            <strong>Quality Assurance Engineering</strong> dan <strong>UI/UX Design</strong>.
+          <p class="about-p" data-i18n="about_p1">
+            Hi! I am a passionate digital creator focused on building reliable and user-centered products. With expertise spanning from <strong>Quality Assurance Engineering</strong> to <strong>UI/UX Design</strong>, I aim to bridge the gap between flawless functionality and beautiful interfaces.
           </p>
-          <p class="about-p">
-            Sebagai mantan <strong>QA Engineer Intern di PT Pupuk Sriwidjaja Palembang</strong>,
-            saya berkontribusi dalam proses software testing, membuat structured test cases,
-            mengidentifikasi bug kritis sebelum production release, dan mendukung peningkatan
-            sistem. Selain QA, saya juga berpengalaman di UI/UX Design, Graphic Design,
-            Video Editing, dan Live Streaming Operations.
+          <p class="about-p" data-i18n="about_p2">
+            My diverse background includes comprehensive software testing, crafting intuitive designs, managing live broadcast operations, and executing creative visual projects. I thrive on combining technical precision with creative vision to deliver impactful digital solutions.
           </p>
 
           <div class="about-meta">
             <div class="meta-item">
-              <i class="fas fa-graduation-cap"></i>
-              <div><span>Pendidikan</span><b>Sistem Informasi, UNSRI 2022–2026</b></div>
-            </div>
-            <div class="meta-item">
               <i class="fas fa-map-marker-alt"></i>
-              <div><span>Lokasi</span><b>Palembang, Sumatera Selatan</b></div>
+              <div><span data-i18n="lbl_loc">Location</span><b data-i18n="val_loc">Palembang, Indonesia</b></div>
             </div>
             <div class="meta-item">
               <i class="fas fa-envelope"></i>
-              <div><span>Email</span><b>mrp.pratama6@gmail.com</b></div>
+              <div><span data-i18n="lbl_email">Email</span><b dir="ltr">mrp.pratama6@gmail.com</b></div>
             </div>
             <div class="meta-item">
               <i class="fas fa-briefcase"></i>
-              <div><span>Status</span><b class="status-open">Open to Work</b></div>
+              <div><span data-i18n="lbl_status">Status</span><b class="status-open" data-i18n="val_status">Open to Work</b></div>
             </div>
           </div>
 
           <div class="about-cta">
-            <a href="#contact"    class="btn btn-primary" id="aboutHire"><i class="fas fa-paper-plane"></i> Hire Me</a>
+            <a href="#contact" class="btn btn-primary" id="aboutHire"><i class="fas fa-paper-plane"></i> <span data-i18n="about_hire">Hire Me</span></a>
             <a href="https://www.linkedin.com/in/muhammadramadhanputrapratama" target="_blank" rel="noopener"
                class="btn btn-ghost" id="aboutLinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a>
           </div>
@@ -208,56 +206,56 @@
   <section id="skills" class="skills sp">
     <div class="container">
       <div class="sec-hd">
-        <h2 class="sec-title">Keahlian Saya</h2>
-        <p class="sec-sub">Beragam bidang yang saya kuasai dan terus kembangkan</p>
+        <h2 class="sec-title" data-i18n="skills_title">My Skills</h2>
+        <p class="sec-sub" data-i18n="skills_sub">The diverse expertise I have mastered and continue to develop</p>
       </div>
 
       <div class="skills-grid">
         <div class="sk-card" data-aos>
           <div class="sk-icon"><i class="fas fa-shield-alt"></i></div>
-          <h3>Quality Assurance</h3>
-          <p>Memastikan kualitas software melalui structured test cases, bug tracking, dan SDLC yang terstruktur.</p>
-          <div class="sk-chips">
+          <h3 dir="ltr">Quality Assurance</h3>
+          <p data-i18n="qa_desc">Ensuring software quality through structured test cases, bug tracking, and a systematic SDLC approach.</p>
+          <div class="sk-chips" dir="ltr">
             <span>Test Case Design</span><span>Bug Tracking</span><span>SDLC</span><span>Test Level & Type</span>
           </div>
         </div>
         <div class="sk-card" data-aos>
           <div class="sk-icon"><i class="fas fa-palette"></i></div>
-          <h3>UI/UX Design</h3>
-          <p>Merancang antarmuka yang intuitif dengan pendekatan Design Thinking dan user research mendalam.</p>
-          <div class="sk-chips">
+          <h3 dir="ltr">UI/UX Design</h3>
+          <p data-i18n="ui_desc">Designing intuitive user interfaces using Design Thinking and in-depth user research.</p>
+          <div class="sk-chips" dir="ltr">
             <span>Figma</span><span>Design Thinking</span><span>Wireframing</span><span>Prototyping</span>
           </div>
         </div>
         <div class="sk-card" data-aos>
           <div class="sk-icon"><i class="fas fa-laptop-code"></i></div>
-          <h3>Web Development</h3>
-          <p>Membangun website modern, responsif, dan performan menggunakan teknologi terkini.</p>
-          <div class="sk-chips">
+          <h3 dir="ltr">Web Development</h3>
+          <p data-i18n="web_desc">Building modern, responsive, and highly performant websites using the latest technologies.</p>
+          <div class="sk-chips" dir="ltr">
             <span>HTML/CSS</span><span>JavaScript</span><span>React</span><span>Firebase</span>
           </div>
         </div>
         <div class="sk-card" data-aos>
           <div class="sk-icon"><i class="fas fa-pen-nib"></i></div>
-          <h3>Graphic Design</h3>
-          <p>Menciptakan identitas visual yang kuat dan konten kreatif yang memukau.</p>
-          <div class="sk-chips">
+          <h3 dir="ltr">Graphic Design</h3>
+          <p data-i18n="graphic_desc">Creating strong visual identities and stunning creative content.</p>
+          <div class="sk-chips" dir="ltr">
             <span>Photoshop</span><span>Illustrator</span><span>Canva</span><span>CorelDRAW</span>
           </div>
         </div>
         <div class="sk-card" data-aos>
           <div class="sk-icon"><i class="fas fa-film"></i></div>
-          <h3>Video Editing</h3>
-          <p>Memproduksi konten video sinematik berkualitas tinggi untuk berbagai kebutuhan.</p>
-          <div class="sk-chips">
+          <h3 dir="ltr">Video Editing</h3>
+          <p data-i18n="video_desc">Producing high-quality cinematic video content for various creative needs.</p>
+          <div class="sk-chips" dir="ltr">
             <span>Premiere Pro</span><span>After Effects</span><span>CapCut</span>
           </div>
         </div>
         <div class="sk-card" data-aos>
           <div class="sk-icon"><i class="fas fa-broadcast-tower"></i></div>
-          <h3>Live Streaming</h3>
-          <p>Mengelola operasional live streaming &amp; broadcast event secara profesional sebagai LSO/VJ.</p>
-          <div class="sk-chips">
+          <h3 dir="ltr">Live Streaming</h3>
+          <p data-i18n="lso_desc">Managing professional live streaming and broadcast event operations smoothly.</p>
+          <div class="sk-chips" dir="ltr">
             <span>OBS Studio</span><span>vMix</span><span>YouTube Live</span><span>Broadcast Tech</span>
           </div>
         </div>
@@ -269,8 +267,8 @@
   <section id="experience" class="experience sp">
     <div class="container">
       <div class="sec-hd">
-        <h2 class="sec-title">Pengalaman</h2>
-        <p class="sec-sub">Perjalanan profesional dan organisasi yang telah membentuk saya</p>
+        <h2 class="sec-title" data-i18n="exp_title">Experience</h2>
+        <p class="sec-sub" data-i18n="exp_sub">The professional and organizational journey that shaped my career</p>
       </div>
 
       <div class="exp-grid">
@@ -280,14 +278,14 @@
             <div class="exp-head-left">
               <div class="exp-dot"><i class="fas fa-shield-alt"></i></div>
               <div class="exp-info">
-                <h3>Quality Assurance Intern</h3>
-                <span class="exp-company"><i class="fas fa-building"></i> PT Pupuk Sriwidjaja</span>
+                <h3 dir="ltr">Quality Assurance Intern</h3>
+                <span class="exp-company" dir="ltr"><i class="fas fa-building"></i> PT Pupuk Sriwidjaja</span>
               </div>
             </div>
-            <span class="exp-period">Jun 25 – Agt 25</span>
+            <span class="exp-period" data-i18n="exp1_date">Jun 25 – Aug 25</span>
           </div>
-          <p class="exp-desc">Bertanggung jawab memastikan produk/sistem memenuhi standar kualitas sebelum dirilis ke pengguna. Membuat test cases dan mengidentifikasi bug kritis.</p>
-          <div class="exp-tags">
+          <p class="exp-desc" data-i18n="exp1_desc">Responsible for ensuring products/systems meet quality standards before release. Created structured test cases and identified critical bugs.</p>
+          <div class="exp-tags" dir="ltr">
             <span>Test Case</span><span>Bug Tracking</span><span>SDLC</span>
           </div>
         </div>
@@ -297,14 +295,14 @@
             <div class="exp-head-left">
               <div class="exp-dot"><i class="fas fa-broadcast-tower"></i></div>
               <div class="exp-info">
-                <h3>Live Streaming Operator</h3>
-                <span class="exp-company"><i class="fas fa-university"></i> Humas Fasilkom UNSRI</span>
+                <h3 dir="ltr">Live Streaming Operator</h3>
+                <span class="exp-company" dir="ltr"><i class="fas fa-university"></i> Humas Fasilkom UNSRI</span>
               </div>
             </div>
-            <span class="exp-period">Feb 25 – Feb 26</span>
+            <span class="exp-period" data-i18n="exp2_date">Feb 25 – Feb 26</span>
           </div>
-          <p class="exp-desc">Bertanggung jawab sebagai LSO untuk kebutuhan penyiaran acara resmi Fasilkom Universitas Sriwijaya selama satu tahun penuh.</p>
-          <div class="exp-tags">
+          <p class="exp-desc" data-i18n="exp2_desc">Acted as Live Streaming Operator for official broadcasts at the Faculty of Computer Science, Sriwijaya University.</p>
+          <div class="exp-tags" dir="ltr">
             <span>OBS Studio</span><span>Broadcasting</span>
           </div>
           <div class="exp-media-box">
@@ -318,14 +316,14 @@
             <div class="exp-head-left">
               <div class="exp-dot"><i class="fas fa-satellite-dish"></i></div>
               <div class="exp-info">
-                <h3>Broadcast Technician</h3>
-                <span class="exp-company"><i class="fas fa-globe"></i> ICAITECH 2025</span>
+                <h3 dir="ltr">Broadcast Technician</h3>
+                <span class="exp-company" dir="ltr"><i class="fas fa-globe"></i> ICAITECH 2025</span>
               </div>
             </div>
-            <span class="exp-period">Nov 25</span>
+            <span class="exp-period" data-i18n="exp3_date">Nov 25</span>
           </div>
-          <p class="exp-desc">Bertugas pada event internasional ICAITECH 2025, memastikan kelancaran teknis siaran selama acara berlangsung.</p>
-          <div class="exp-tags">
+          <p class="exp-desc" data-i18n="exp3_desc">Served as Broadcast Technician at the ICAITECH 2025 international event, ensuring smooth technical broadcasts.</p>
+          <div class="exp-tags" dir="ltr">
             <span>Broadcast Tech</span><span>Live Event</span>
           </div>
         </div>
@@ -335,15 +333,15 @@
             <div class="exp-head-left">
               <div class="exp-dot"><i class="fas fa-users-cog"></i></div>
               <div class="exp-info">
-                <h3>Deputi Dinas Kominfo</h3>
-                <span class="exp-company"><i class="fas fa-university"></i> BEM Fasilkom UNSRI</span>
+                <h3 dir="ltr">Deputi Dinas Kominfo</h3>
+                <span class="exp-company" dir="ltr"><i class="fas fa-university"></i> BEM Fasilkom UNSRI</span>
               </div>
             </div>
-            <span class="exp-period">Feb 24 – Des 24</span>
+            <span class="exp-period" data-i18n="exp4_date">Feb 24 – Dec 24</span>
           </div>
-          <p class="exp-desc">Memimpin divisi media dan informasi BEM, merancang strategi konten digital, dan memproduksi berbagai media kreatif.</p>
-          <div class="exp-tags">
-            <span>Media Management</span><span>Kepemimpinan</span>
+          <p class="exp-desc" data-i18n="exp4_desc">Led the media and information division, devised digital content strategies, and produced various creative media.</p>
+          <div class="exp-tags" dir="ltr">
+            <span>Media Management</span><span>Leadership</span>
           </div>
           <div class="exp-media-box">
             <img src="ProfOrmawaF.jpg" alt="Video Profil Ormawa Fasilkom" loading="lazy" />
@@ -356,14 +354,14 @@
             <div class="exp-head-left">
               <div class="exp-dot"><i class="fas fa-photo-video"></i></div>
               <div class="exp-info">
-                <h3>PIC LSO Techporia</h3>
-                <span class="exp-company"><i class="fas fa-star"></i> Technology Euphoria 2023</span>
+                <h3 dir="ltr">PIC LSO Techporia</h3>
+                <span class="exp-company" dir="ltr"><i class="fas fa-star"></i> Technology Euphoria 2023</span>
               </div>
             </div>
-            <span class="exp-period">Sep 23 – Okt 23</span>
+            <span class="exp-period" data-i18n="exp5_date">Sep 23 – Oct 23</span>
           </div>
-          <p class="exp-desc">Terpilih sebagai PIC LSO pada event Techporia 2023, memimpin tim streaming selama rangkaian perlombaan tingkat nasional.</p>
-          <div class="exp-tags">
+          <p class="exp-desc" data-i18n="exp5_desc">Appointed as the Person In Charge of Live Streaming Operations for a national-level competition event.</p>
+          <div class="exp-tags" dir="ltr">
             <span>Team Lead</span><span>OBS Studio</span>
           </div>
           <div class="exp-media-box">
@@ -377,15 +375,15 @@
             <div class="exp-head-left">
               <div class="exp-dot"><i class="fas fa-users"></i></div>
               <div class="exp-info">
-                <h3>Staff Multimedia</h3>
-                <span class="exp-company"><i class="fas fa-university"></i> BEM Fasilkom UNSRI</span>
+                <h3 dir="ltr">Staff Multimedia</h3>
+                <span class="exp-company" dir="ltr"><i class="fas fa-university"></i> BEM Fasilkom UNSRI</span>
               </div>
             </div>
-            <span class="exp-period">Feb 23 – Des 23</span>
+            <span class="exp-period" data-i18n="exp6_date">Feb 23 – Dec 23</span>
           </div>
-          <p class="exp-desc">Bertanggung jawab atas produksi konten multimedia, desain grafis, dan video after movie kegiatan kemahasiswaan.</p>
-          <div class="exp-tags">
-            <span>Video Editing</span><span>Desain Grafis</span>
+          <p class="exp-desc" data-i18n="exp6_desc">Responsible for multimedia content production, graphic design, and after-movie videos for student activities.</p>
+          <div class="exp-tags" dir="ltr">
+            <span>Video Editing</span><span>Graphic Design</span>
           </div>
           <div class="exp-media-box">
             <img src="AfterMoviePK2.jpg" alt="After Movie PKKMB" loading="lazy" />
@@ -401,18 +399,18 @@
   <section id="portfolio" class="portfolio sp">
     <div class="container">
       <div class="sec-hd">
-        <h2 class="sec-title">Portofolio</h2>
-        <p class="sec-sub">Koleksi proyek dan publikasi ilmiah terbaik yang pernah saya kerjakan</p>
+        <h2 class="sec-title" data-i18n="port_title">Portfolio</h2>
+        <p class="sec-sub" data-i18n="port_sub">A collection of my best projects and scientific publications</p>
       </div>
 
-      <div class="filters">
-        <button class="fb active" data-filter="all"     id="fAll">Semua</button>
-        <button class="fb"        data-filter="web"     id="fWeb">Website</button>
-        <button class="fb"        data-filter="app"     id="fApp">App Dev</button>
-        <button class="fb"        data-filter="video"   id="fVid">Video</button>
-        <button class="fb"        data-filter="graphic" id="fGfx">Grafis</button>
-        <button class="fb"        data-filter="lso"     id="fLso">Live Streaming</button>
-        <button class="fb"        data-filter="pub"     id="fPub">Publikasi</button>
+      <div class="filters" dir="ltr">
+        <button class="fb active" data-filter="all"     id="fAll" data-i18n="f_all">All</button>
+        <button class="fb"        data-filter="web"     id="fWeb" data-i18n="f_web">Website</button>
+        <button class="fb"        data-filter="app"     id="fApp" data-i18n="f_app">App Dev</button>
+        <button class="fb"        data-filter="video"   id="fVid" data-i18n="f_video">Video</button>
+        <button class="fb"        data-filter="graphic" id="fGfx" data-i18n="f_graphic">Graphic</button>
+        <button class="fb"        data-filter="lso"     id="fLso" data-i18n="f_lso">Live Streaming</button>
+        <button class="fb"        data-filter="pub"     id="fPub" data-i18n="f_pub">Publications</button>
       </div>
 
       <div class="port-grid" id="portGrid">
@@ -421,116 +419,116 @@
           <div class="pc-img">
             <img src="webpm.jpg" alt="PM Fried Chicken" loading="lazy" />
             <div class="pc-ov">
-              <span class="pc-tag">Website</span>
-              <h3>Website PM Fried Chicken</h3>
-              <p>Catalog Produk dan Sistem Pemesanan Online PM Fried Chicken</p>
+              <span class="pc-tag" dir="ltr">Website</span>
+              <h3 dir="ltr">Website PM Fried Chicken</h3>
+              <p data-i18n="port1_desc">Product Catalog and Online Ordering System for PM Fried Chicken</p>
               <a href="https://pm-fried-chicken.vercel.app/" target="_blank" rel="noopener" id="pPMFC">
-                <i class="fas fa-external-link-alt"></i> Lihat Proyek
+                <i class="fas fa-external-link-alt"></i> <span data-i18n="btn_view_project">View Project</span>
               </a>
             </div>
           </div>
-          <div class="pc-foot"><span class="pcb web">Web</span><h4>Website PM Fried Chicken</h4></div>
+          <div class="pc-foot"><span class="pcb web" dir="ltr">Web</span><h4 dir="ltr">Website PM Fried Chicken</h4></div>
         </div>
 
         <div class="pc" data-category="app" data-aos>
           <div class="pc-img">
             <img src="Lalapedia.jpg" alt="LalaPedia" loading="lazy" />
             <div class="pc-ov">
-              <span class="pc-tag">App Dev · AR</span>
-              <h3>LalaPedia — EduSawit AR</h3>
-              <p>Implementasi Augmented Reality pada Edukasi Tanaman Sawit Ramah Lingkungan (Publikasi di Jurnal Teknika)</p>
+              <span class="pc-tag" dir="ltr">App Dev · AR</span>
+              <h3 dir="ltr">LalaPedia — EduSawit AR</h3>
+              <p data-i18n="port2_desc">Implementation of Augmented Reality for Eco-Friendly Palm Oil Education (Published in Teknika Journal)</p>
               <a href="https://doi.org/10.34148/teknika.v14i3.1368" target="_blank" rel="noopener" id="pLala">
-                <i class="fas fa-external-link-alt"></i> Lihat Publikasi
+                <i class="fas fa-external-link-alt"></i> <span data-i18n="btn_view_pub">View Publication</span>
               </a>
             </div>
           </div>
-          <div class="pc-foot"><span class="pcb app">App</span><h4>LalaPedia AR — EduSawit</h4></div>
+          <div class="pc-foot"><span class="pcb app" dir="ltr">App</span><h4 dir="ltr">LalaPedia AR — EduSawit</h4></div>
         </div>
 
         <div class="pc" data-category="app" data-aos>
           <div class="pc-img">
             <img src="FAR.jpg" alt="Ekspor Fasilkom AR" loading="lazy" />
             <div class="pc-ov">
-              <span class="pc-tag">App Dev · AR</span>
-              <h3>Ekspor Fasilkom AR</h3>
-              <p>Pengenalan Fasilkom UNSRI berbasis Augmented Reality menggunakan Vuforia</p>
-              <a href="#" id="pFAR"><i class="fas fa-info-circle"></i> Detail Proyek</a>
+              <span class="pc-tag" dir="ltr">App Dev · AR</span>
+              <h3 dir="ltr">Ekspor Fasilkom AR</h3>
+              <p data-i18n="port3_desc">Introduction to the Faculty of Computer Science UNSRI based on Augmented Reality using Vuforia</p>
+              <a href="#" id="pFAR"><i class="fas fa-info-circle"></i> <span data-i18n="btn_detail">Project Detail</span></a>
             </div>
           </div>
-          <div class="pc-foot"><span class="pcb app">App</span><h4>Ekspor Fasilkom AR</h4></div>
+          <div class="pc-foot"><span class="pcb app" dir="ltr">App</span><h4 dir="ltr">Ekspor Fasilkom AR</h4></div>
         </div>
 
         <div class="pc" data-category="video" data-aos>
           <div class="pc-img">
             <img src="ProfOrmawaF.jpg" alt="Profil Ormawa Fasilkom" loading="lazy" />
             <div class="pc-ov">
-              <span class="pc-tag">Video</span>
-              <h3>Profil Ormawa Fasilkom</h3>
-              <p>Video Profil resmi Organisasi Kemahasiswaan Fasilkom UNSRI</p>
+              <span class="pc-tag" dir="ltr">Video</span>
+              <h3 dir="ltr">Profil Ormawa Fasilkom</h3>
+              <p data-i18n="port4_desc">Official profile video of the Student Organizations at the Faculty of Computer Science</p>
               <a href="https://youtu.be/acAdcMC0pOI?si=JtwlgcbvUsDU02m5" target="_blank" rel="noopener" id="pOrmawa">
-                <i class="fab fa-youtube"></i> Tonton Video
+                <i class="fab fa-youtube"></i> <span data-i18n="btn_watch">Watch Video</span>
               </a>
             </div>
           </div>
-          <div class="pc-foot"><span class="pcb video">Video</span><h4>Profil Ormawa Fasilkom</h4></div>
+          <div class="pc-foot"><span class="pcb video" dir="ltr">Video</span><h4 dir="ltr">Profil Ormawa Fasilkom</h4></div>
         </div>
 
         <div class="pc" data-category="video" data-aos>
           <div class="pc-img">
             <img src="AfterMoviePK2.jpg" alt="After Movie PKKMB 2023" loading="lazy" />
             <div class="pc-ov">
-              <span class="pc-tag">Video</span>
-              <h3>After Movie PKKMB 2023</h3>
-              <p>Video After Movie PKKMB Fasilkom Universitas Sriwijaya 2023</p>
+              <span class="pc-tag" dir="ltr">Video</span>
+              <h3 dir="ltr">After Movie PKKMB 2023</h3>
+              <p data-i18n="port5_desc">After Movie Video of the 2023 New Student Orientation</p>
               <a href="https://youtu.be/g1J2L5u9hSY?si=2R4-oSXQs7pmnMoE" target="_blank" rel="noopener" id="pPKKMB">
-                <i class="fab fa-youtube"></i> Tonton Video
+                <i class="fab fa-youtube"></i> <span data-i18n="btn_watch">Watch Video</span>
               </a>
             </div>
           </div>
-          <div class="pc-foot"><span class="pcb video">Video</span><h4>After Movie PKKMB Fasilkom</h4></div>
+          <div class="pc-foot"><span class="pcb video" dir="ltr">Video</span><h4 dir="ltr">After Movie PKKMB Fasilkom</h4></div>
         </div>
 
         <div class="pc" data-category="graphic" data-aos>
           <div class="pc-img">
             <img src="RPM.jpg" alt="Rebranding PM Fried Chicken" loading="lazy" />
             <div class="pc-ov">
-              <span class="pc-tag">Grafis</span>
-              <h3>Rebranding PM Fried Chicken</h3>
-              <p>Desain Logo baru dan Redesign Konsep Visual Outlet PM Fried Chicken</p>
-              <a href="#" id="pRPM"><i class="fas fa-info-circle"></i> Detail Proyek</a>
+              <span class="pc-tag" dir="ltr">Graphic</span>
+              <h3 dir="ltr">Rebranding PM Fried Chicken</h3>
+              <p data-i18n="port6_desc">New Logo Design and Visual Concept Redesign for PM Fried Chicken Outlets</p>
+              <a href="#" id="pRPM"><i class="fas fa-info-circle"></i> <span data-i18n="btn_detail">Project Detail</span></a>
             </div>
           </div>
-          <div class="pc-foot"><span class="pcb graphic">Grafis</span><h4>Rebranding PM Fried Chicken</h4></div>
+          <div class="pc-foot"><span class="pcb graphic" dir="ltr">Grafis</span><h4 dir="ltr">Rebranding PM Fried Chicken</h4></div>
         </div>
 
         <div class="pc" data-category="lso" data-aos>
           <div class="pc-img">
             <img src="LSOT.jpg" alt="LSO Techporia 2023-2024" loading="lazy" />
             <div class="pc-ov">
-              <span class="pc-tag">Live Streaming</span>
-              <h3>LSO Techporia 2023–2024</h3>
-              <p>Live Streaming Operator Event Technology Euphoria (Techporia) 2023–2024</p>
+              <span class="pc-tag" dir="ltr">Live Streaming</span>
+              <h3 dir="ltr">LSO Techporia 2023–2024</h3>
+              <p data-i18n="port7_desc">Live Streaming Operator for Technology Euphoria (Techporia) Event 2023–2024</p>
               <a href="https://www.youtube.com/live/TzOh_Jqm9QI?si=vl5Vx-earD_f60s-" target="_blank" rel="noopener" id="pLSOT">
-                <i class="fab fa-youtube"></i> Tonton Live
+                <i class="fab fa-youtube"></i> <span data-i18n="btn_watch_live">Watch Live</span>
               </a>
             </div>
           </div>
-          <div class="pc-foot"><span class="pcb lso">LSO</span><h4>LSO Techporia 2023–2024</h4></div>
+          <div class="pc-foot"><span class="pcb lso" dir="ltr">LSO</span><h4 dir="ltr">LSO Techporia 2023–2024</h4></div>
         </div>
 
         <div class="pc" data-category="lso" data-aos>
           <div class="pc-img">
             <img src="LSOY.jpg" alt="LSO Yudisium Fasilkom 74-75" loading="lazy" />
             <div class="pc-ov">
-              <span class="pc-tag">Live Streaming</span>
-              <h3>LSO Yudisium Fasilkom</h3>
-              <p>Live Streaming Operator Event Yudisium Fasilkom UNSRI Angkatan 74–75</p>
+              <span class="pc-tag" dir="ltr">Live Streaming</span>
+              <h3 dir="ltr">LSO Yudisium Fasilkom</h3>
+              <p data-i18n="port8_desc">Live Streaming Operator for Graduation Event Batch 74–75</p>
               <a href="https://www.youtube.com/live/0ZjVnGVpNS0?si=W0G0MonsOw3g4rGZ" target="_blank" rel="noopener" id="pLSOY">
-                <i class="fab fa-youtube"></i> Tonton Live
+                <i class="fab fa-youtube"></i> <span data-i18n="btn_watch_live">Watch Live</span>
               </a>
             </div>
           </div>
-          <div class="pc-foot"><span class="pcb lso">LSO</span><h4>LSO Yudisium Fasilkom 74–75</h4></div>
+          <div class="pc-foot"><span class="pcb lso" dir="ltr">LSO</span><h4 dir="ltr">LSO Yudisium Fasilkom 74–75</h4></div>
         </div>
 
         <!-- PUBLIKASI ILMIAH -->
@@ -538,54 +536,54 @@
           <div class="pc-img pc-img-pub">
             <div class="pub-cover">
               <i class="fas fa-book-open"></i>
-              <span>Jurnal Teknika</span>
+              <span dir="ltr">Jurnal Teknika</span>
             </div>
             <div class="pc-ov">
-              <span class="pc-tag">Publikasi Ilmiah</span>
-              <h3>EduSawit: AR untuk Edukasi Tanaman Sawit</h3>
-              <p>Implementasi Augmented Reality dalam Edukasi Tanaman Sawit Ramah Lingkungan — Teknika, Nov 2025</p>
+              <span class="pc-tag" data-i18n="tag_pub">Publication</span>
+              <h3 dir="ltr">EduSawit: AR untuk Edukasi Tanaman Sawit</h3>
+              <p data-i18n="port9_desc">Implementation of Augmented Reality in Eco-Friendly Palm Oil Education — Teknika, Nov 2025</p>
               <a href="https://doi.org/10.34148/teknika.v14i3.1368" target="_blank" rel="noopener" id="pubEdu">
-                <i class="fas fa-external-link-alt"></i> Baca Jurnal
+                <i class="fas fa-external-link-alt"></i> <span data-i18n="btn_read_journal">Read Journal</span>
               </a>
             </div>
           </div>
-          <div class="pc-foot"><span class="pcb pub">Jurnal</span><h4>EduSawit — Augmented Reality</h4></div>
+          <div class="pc-foot"><span class="pcb pub" dir="ltr">Jurnal</span><h4 dir="ltr">EduSawit — Augmented Reality</h4></div>
         </div>
 
         <div class="pc" data-category="pub" data-aos>
           <div class="pc-img pc-img-pub">
             <div class="pub-cover pub-cover-2">
               <i class="fas fa-map-marked-alt"></i>
-              <span>JATI Journal</span>
+              <span dir="ltr">JATI Journal</span>
             </div>
             <div class="pc-ov">
-              <span class="pc-tag">Publikasi Ilmiah</span>
-              <h3>UI/UX Aplikasi "PAYO" Pemandu Wisata</h3>
-              <p>Perancangan UI/UX Aplikasi Pemandu Wisata Palembang dengan Metode Design Thinking — JATI, Mei 2025</p>
+              <span class="pc-tag" data-i18n="tag_pub">Publication</span>
+              <h3 dir="ltr">UI/UX Aplikasi "PAYO" Pemandu Wisata</h3>
+              <p data-i18n="port10_desc">UI/UX Design of Palembang Tour Guide App using Design Thinking — JATI, May 2025</p>
               <a href="https://doi.org/10.36040/jati.v9i4.14176" target="_blank" rel="noopener" id="pubPayo">
-                <i class="fas fa-external-link-alt"></i> Baca Jurnal
+                <i class="fas fa-external-link-alt"></i> <span data-i18n="btn_read_journal">Read Journal</span>
               </a>
             </div>
           </div>
-          <div class="pc-foot"><span class="pcb pub">Jurnal</span><h4>UI/UX App PAYO Palembang</h4></div>
+          <div class="pc-foot"><span class="pcb pub" dir="ltr">Jurnal</span><h4 dir="ltr">UI/UX App PAYO Palembang</h4></div>
         </div>
 
         <div class="pc" data-category="pub" data-aos>
           <div class="pc-img pc-img-pub">
             <div class="pub-cover pub-cover-3">
               <i class="fas fa-chart-bar"></i>
-              <span>JATI Journal</span>
+              <span dir="ltr">JATI Journal</span>
             </div>
             <div class="pc-ov">
-              <span class="pc-tag">Publikasi Ilmiah</span>
-              <h3>Clustering Kualitas Hidup Indonesia</h3>
-              <p>Perbandingan K-Means, K-Medoid, dan DBSCAN untuk Clustering Kualitas Hidup Indonesia — JATI, Mei 2025</p>
+              <span class="pc-tag" data-i18n="tag_pub">Publication</span>
+              <h3 dir="ltr">Clustering Kualitas Hidup Indonesia</h3>
+              <p data-i18n="port11_desc">Comparison of K-Means, K-Medoid, and DBSCAN for Clustering Life Quality in Indonesia — JATI, May 2025</p>
               <a href="https://doi.org/10.36040/jati.v9i4.13916" target="_blank" rel="noopener" id="pubCluster">
-                <i class="fas fa-external-link-alt"></i> Baca Jurnal
+                <i class="fas fa-external-link-alt"></i> <span data-i18n="btn_read_journal">Read Journal</span>
               </a>
             </div>
           </div>
-          <div class="pc-foot"><span class="pcb pub">Jurnal</span><h4>Clustering Kualitas Hidup</h4></div>
+          <div class="pc-foot"><span class="pcb pub" dir="ltr">Jurnal</span><h4 dir="ltr">Clustering Kualitas Hidup</h4></div>
         </div>
 
       </div>
@@ -596,45 +594,45 @@
   <section id="contact" class="contact sp">
     <div class="container">
       <div class="sec-hd">
-        <h2 class="sec-title">Hubungi Saya</h2>
-        <p class="sec-sub">Punya proyek menarik? Saya siap berkolaborasi bersama Anda</p>
+        <h2 class="sec-title" data-i18n="contact_title">Contact Me</h2>
+        <p class="sec-sub" data-i18n="contact_sub">Have an interesting project? Let's collaborate together</p>
       </div>
 
       <div class="contact-grid">
 
         <div class="ct-info" data-aos>
-          <h3>Informasi Kontak</h3>
+          <h3 data-i18n="contact_info_title">Contact Information</h3>
           <div class="ct-item">
             <div class="ct-ico"><i class="fas fa-envelope"></i></div>
-            <div><span>Email</span>
-              <a href="mailto:mrp.pratama6@gmail.com" id="cEmail">mrp.pratama6@gmail.com</a>
+            <div><span data-i18n="lbl_email">Email</span>
+              <a href="mailto:mrp.pratama6@gmail.com" id="cEmail" dir="ltr">mrp.pratama6@gmail.com</a>
             </div>
           </div>
           <div class="ct-item">
             <div class="ct-ico"><i class="fas fa-phone"></i></div>
-            <div><span>Telepon</span>
-              <a href="tel:+6282218402186" id="cPhone">+62 822 1840 2186</a>
+            <div><span data-i18n="lbl_phone">Phone</span>
+              <a href="tel:+6282218402186" id="cPhone" dir="ltr">+62 822 1840 2186</a>
             </div>
           </div>
           <div class="ct-item">
             <div class="ct-ico"><i class="fas fa-map-marker-alt"></i></div>
-            <div><span>Lokasi</span><p>Palembang, Sumatera Selatan</p></div>
+            <div><span data-i18n="lbl_loc">Location</span><p data-i18n="val_loc">Palembang, Indonesia</p></div>
           </div>
           <div class="ct-item">
             <div class="ct-ico"><i class="fas fa-globe"></i></div>
-            <div><span>Website</span>
-              <a href="https://prata-mana.vercel.app" target="_blank" rel="noopener" id="cWeb">prata-mana.vercel.app</a>
+            <div><span data-i18n="lbl_web">Website</span>
+              <a href="https://prata-mana.vercel.app" target="_blank" rel="noopener" id="cWeb" dir="ltr">prata-mana.vercel.app</a>
             </div>
           </div>
 
           <div class="ct-social">
-            <p>Temukan saya di</p>
+            <p data-i18n="find_me">Find me on</p>
             <div class="socials">
               <a href="https://www.linkedin.com/in/muhammadramadhanputrapratama" target="_blank" rel="noopener"
                 class="soc li" id="sLi" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
               <a href="https://github.com/mrppratama" target="_blank" rel="noopener"
                 class="soc gh" id="sGh" aria-label="GitHub"><i class="fab fa-github"></i></a>
-              <a href="https://www.instagram.com/mrppratam4" target="_blank" rel="noopener"
+              <a href="https://www.instagram.com/mrpprtama" target="_blank" rel="noopener"
                 class="soc ig" id="sIg" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
               <a href="https://www.youtube.com/@mrppratama" target="_blank" rel="noopener"
                 class="soc yt" id="sYt" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
@@ -647,28 +645,28 @@
         <form class="ct-form" id="contactForm" novalidate data-aos>
           <div class="fg-row">
             <div class="fg">
-              <label for="cName">Nama Lengkap</label>
-              <div class="fi"><i class="fas fa-user"></i><input type="text" id="cName" placeholder="Nama kamu" required /></div>
+              <label for="cName" data-i18n="form_name">Full Name</label>
+              <div class="fi"><i class="fas fa-user"></i><input type="text" id="cName" placeholder="Your Name" required data-i18n-ph="ph_name" /></div>
             </div>
             <div class="fg">
-              <label for="cMail">Email</label>
-              <div class="fi"><i class="fas fa-envelope"></i><input type="email" id="cMail" placeholder="email@kamu.com" required /></div>
+              <label for="cMail" data-i18n="form_email">Email</label>
+              <div class="fi"><i class="fas fa-envelope"></i><input type="email" id="cMail" placeholder="email@domain.com" required data-i18n-ph="ph_email" /></div>
             </div>
           </div>
           <div class="fg">
-            <label for="cSubj">Subjek</label>
-            <div class="fi"><i class="fas fa-tag"></i><input type="text" id="cSubj" placeholder="Topik pesan" /></div>
+            <label for="cSubj" data-i18n="form_subj">Subject</label>
+            <div class="fi"><i class="fas fa-tag"></i><input type="text" id="cSubj" placeholder="Message topic" data-i18n-ph="ph_subj" /></div>
           </div>
           <div class="fg">
-            <label for="cMsg">Pesan</label>
-            <div class="fi fi-ta"><i class="fas fa-comment-alt"></i><textarea id="cMsg" rows="5" placeholder="Tuliskan pesanmu…" required></textarea></div>
+            <label for="cMsg" data-i18n="form_msg">Message</label>
+            <div class="fi fi-ta"><i class="fas fa-comment-alt"></i><textarea id="cMsg" rows="5" placeholder="Write your message here..." required data-i18n-ph="ph_msg"></textarea></div>
           </div>
           <button type="submit" class="btn btn-primary btn-full" id="cSubmit">
-            <i class="fas fa-paper-plane"></i><span>Kirim Pesan</span>
+            <i class="fas fa-paper-plane"></i><span data-i18n="form_submit">Send Message</span>
             <span class="btn-spin" id="cSpin"></span>
           </button>
           <div class="ct-ok" id="ctOk">
-            <i class="fas fa-check-circle"></i> Pesan terkirim! Saya akan segera menghubungi Anda.
+            <i class="fas fa-check-circle"></i> <span data-i18n="form_ok">Message sent! I will contact you soon.</span>
           </div>
         </form>
 
@@ -681,34 +679,34 @@
     <div class="container">
       <div class="ft-grid">
         <div class="ft-brand">
-          <a href="#home" class="logo"><span class="logo-lt">&lt;</span>PrataMana<span class="logo-lt">/&gt;</span></a>
-          <p>Fresh Graduate Sistem Informasi UNSRI yang passionate dalam QA Engineering, UI/UX Design, dan pengembangan produk digital berkualitas tinggi.</p>
+          <a href="#home" class="logo" dir="ltr"><span class="logo-lt">&lt;</span>PrataMana<span class="logo-lt">/&gt;</span></a>
+          <p data-i18n="ft_brand_desc">Digital creator dedicated to crafting meaningful and impactful digital experiences.</p>
         </div>
         <div class="ft-nav">
-          <h4>Navigasi</h4>
+          <h4 data-i18n="ft_nav_title">Navigation</h4>
           <ul>
-            <li><a href="#home">Beranda</a></li>
-            <li><a href="#about">Tentang</a></li>
-            <li><a href="#skills">Keahlian</a></li>
-            <li><a href="#experience">Pengalaman</a></li>
-            <li><a href="#portfolio">Portofolio</a></li>
-            <li><a href="#contact">Kontak</a></li>
+            <li><a href="#home" data-i18n="nav_home">Home</a></li>
+            <li><a href="#about" data-i18n="nav_about">About</a></li>
+            <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+            <li><a href="#experience" data-i18n="nav_exp">Experience</a></li>
+            <li><a href="#portfolio" data-i18n="nav_port">Portfolio</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
           </ul>
         </div>
         <div class="ft-soc">
-          <h4>Sosial Media</h4>
+          <h4 data-i18n="ft_soc_title">Social Media</h4>
           <div class="ft-socials">
             <a href="https://www.linkedin.com/in/muhammadramadhanputrapratama" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
             <a href="https://github.com/mrppratama"                                target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://www.instagram.com/mrppratam4"                         target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/mrpprtama"                         target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             <a href="https://www.youtube.com/@mrppratama"                           target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
             <a href="https://www.facebook.com/share/1BUSZmmym9/?mibextid=qi2Omg"   target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
           </div>
         </div>
       </div>
       <div class="ft-bottom">
-        <p>&copy; 2025 PrataMana Portfolio &mdash; Dibuat dengan <i class="fas fa-heart"></i> di Palembang</p>
-        <button class="btt" id="backToTop" aria-label="Kembali ke atas"><i class="fas fa-arrow-up"></i></button>
+        <p dir="ltr">&copy; 2025 PrataMana Portfolio &mdash; <span data-i18n="ft_copy">Made with <i class="fas fa-heart"></i> in Palembang</span></p>
+        <button class="btt" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
       </div>
     </div>
   </footer>
