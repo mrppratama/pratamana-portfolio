@@ -593,7 +593,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const dark = html.getAttribute('data-theme') === 'dark';
     
     // Updated particle colors to match calm Indigo / Cyan
-    const rgb = dark ? '99,102,241' : '6,182,212'; 
+    const rgb = dark ? '139,92,246' : '20,184,166'; 
 
     dots.forEach(d => {
       d.x += d.vx;  d.y += d.vy;
@@ -815,4 +815,5 @@ document.addEventListener('DOMContentLoaded', () => {
 const s = document.createElement('style');
 s.textContent = '@keyframes cardIn{from{opacity:0;transform:scale(.96)}to{opacity:1;transform:scale(1)}}';
 document.head.appendChild(s);
+
 
