@@ -1,5 +1,5 @@
 /* ════════════════════════════════════════
-   PRATAMANA PORTFOLIO — script.js v5 (i18n)
+   PRATAMANA PORTFOLIO — script.js v6 (100% i18n & Calm Theme)
    ════════════════════════════════════════ */
 
 const translations = {
@@ -12,7 +12,16 @@ const translations = {
     nav_contact: "Contact",
     hero_avail: "Open to Work & Collaboration",
     hero_greeting: "Hello, I'm",
+    name_first: "Muhammad",
+    name_last: "Ramadhan Putra Pratama",
+    name_last_2: "Putra Pratama",
     hero_role_prefix: "A ",
+    role_qa: "QA Engineer",
+    role_ui: "UI/UX Designer",
+    role_web: "Web Developer",
+    role_graphic: "Graphic Designer",
+    role_video: "Video Editor",
+    role_lso: "Live Streaming Op.",
     hero_bio: "A passionate digital creator dedicated to building high-quality digital products — from <strong>Quality Assurance Engineering</strong> to user-centered <strong>UI/UX Design</strong> that makes a real impact.",
     hero_cta_port: "View Portfolio",
     hero_cta_contact: "Contact Me",
@@ -20,6 +29,9 @@ const translations = {
     stat_skills: "Core Skills",
     stat_exp: "Years Experience",
     scroll: "Scroll",
+    chip_qa: "QA",
+    chip_design: "Design",
+    chip_video: "Video",
     about_title: "About Me",
     about_sub: "Get to know the person behind the digital creations",
     about_badge: "Years<br>Experience",
@@ -40,8 +52,30 @@ const translations = {
     graphic_desc: "Creating strong visual identities and stunning creative content.",
     video_desc: "Producing high-quality cinematic video content for various creative needs.",
     lso_desc: "Managing professional live streaming and broadcast event operations smoothly.",
+    tag_tc: "Test Case Design",
+    tag_bug: "Bug Tracking",
+    tag_sdlc: "SDLC",
+    tag_test_lvl: "Test Level & Type",
+    tag_dt: "Design Thinking",
+    tag_wire: "Wireframing",
+    tag_proto: "Prototyping",
+    tag_broad: "Broadcast Tech",
+    tag_broad_live: "Broadcasting",
+    tag_live_evt: "Live Event",
+    tag_media_mgt: "Media Management",
+    tag_leader: "Leadership",
+    tag_team_lead: "Team Lead",
+    tag_app_ar: "App Dev · AR",
     exp_title: "Experience",
     exp_sub: "The professional and organizational journey that shaped my career",
+    role_qa_intern: "Quality Assurance Intern",
+    comp_pt: "PT Pupuk Sriwidjaja",
+    role_broad_tech: "Broadcast Technician",
+    comp_humas: "Humas Fasilkom UNSRI",
+    role_deputi: "Deputi Dinas Kominfo",
+    comp_bem: "BEM Fasilkom UNSRI",
+    role_pic_lso: "PIC LSO Techporia",
+    role_staff_multi: "Staff Multimedia",
     exp1_date: "Jun 25 – Aug 25",
     exp1_desc: "Responsible for ensuring products/systems meet quality standards before release. Created structured test cases and identified critical bugs.",
     exp2_date: "Feb 25 – Feb 26",
@@ -63,23 +97,40 @@ const translations = {
     f_graphic: "Graphic",
     f_lso: "Live Streaming",
     f_pub: "Publications",
+    port1_title: "Website PM Fried Chicken",
     port1_desc: "Product Catalog and Online Ordering System for PM Fried Chicken",
     btn_view_project: "View Project",
+    port2_title: "LalaPedia — EduSawit AR",
     port2_desc: "Implementation of Augmented Reality for Eco-Friendly Palm Oil Education (Published in Teknika Journal)",
     btn_view_pub: "View Publication",
+    port3_title: "Ekspor Fasilkom AR",
     port3_desc: "Introduction to the Faculty of Computer Science UNSRI based on Augmented Reality using Vuforia",
     btn_detail: "Project Detail",
+    port4_title: "Profil Ormawa Fasilkom",
     port4_desc: "Official profile video of the Student Organizations at the Faculty of Computer Science",
     btn_watch: "Watch Video",
+    port5_title: "After Movie PKKMB 2023",
     port5_desc: "After Movie Video of the 2023 New Student Orientation",
+    port6_title: "Rebranding PM Fried Chicken",
     port6_desc: "New Logo Design and Visual Concept Redesign for PM Fried Chicken Outlets",
+    port7_title: "LSO Techporia 2023–2024",
     port7_desc: "Live Streaming Operator for Technology Euphoria (Techporia) Event 2023–2024",
     btn_watch_live: "Watch Live",
+    port8_title: "LSO Yudisium Fasilkom",
     port8_desc: "Live Streaming Operator for Graduation Event Batch 74–75",
     tag_pub: "Publication",
+    pub_teknika: "Jurnal Teknika",
+    pub_jati: "JATI Journal",
+    lbl_journal: "Journal",
+    port9_title: "EduSawit: AR untuk Edukasi Tanaman Sawit",
+    port9_title_short: "EduSawit — Augmented Reality",
     port9_desc: "Implementation of Augmented Reality in Eco-Friendly Palm Oil Education — Teknika, Nov 2025",
     btn_read_journal: "Read Journal",
+    port10_title: "UI/UX Aplikasi \"PAYO\" Pemandu Wisata",
+    port10_title_short: "UI/UX App PAYO Palembang",
     port10_desc: "UI/UX Design of Palembang Tour Guide App using Design Thinking — JATI, May 2025",
+    port11_title: "Clustering Kualitas Hidup Indonesia",
+    port11_title_short: "Clustering Kualitas Hidup",
     port11_desc: "Comparison of K-Means, K-Medoid, and DBSCAN for Clustering Life Quality in Indonesia — JATI, May 2025",
     contact_title: "Contact Me",
     contact_sub: "Have an interesting project? Let's collaborate together",
@@ -111,7 +162,16 @@ const translations = {
     nav_contact: "Kontak",
     hero_avail: "Terbuka untuk Proyek & Kolaborasi",
     hero_greeting: "Halo, saya",
+    name_first: "Muhammad",
+    name_last: "Ramadhan Putra Pratama",
+    name_last_2: "Putra Pratama",
     hero_role_prefix: "Seorang ",
+    role_qa: "QA Engineer",
+    role_ui: "Desainer UI/UX",
+    role_web: "Pengembang Web",
+    role_graphic: "Desainer Grafis",
+    role_video: "Video Editor",
+    role_lso: "Operator Live Streaming",
     hero_bio: "Kreator digital yang berdedikasi membangun produk berkualitas tinggi — mulai dari <strong>Quality Assurance Engineering</strong> hingga <strong>UI/UX Design</strong> yang berpusat pada pengguna dan memberikan dampak nyata.",
     hero_cta_port: "Lihat Portofolio",
     hero_cta_contact: "Hubungi Saya",
@@ -119,6 +179,9 @@ const translations = {
     stat_skills: "Bidang Keahlian",
     stat_exp: "Tahun Pengalaman",
     scroll: "Gulir",
+    chip_qa: "QA",
+    chip_design: "Desain",
+    chip_video: "Video",
     about_title: "Tentang Saya",
     about_sub: "Mengenal lebih dekat sosok di balik karya-karya digital ini",
     about_badge: "Tahun<br>Pengalaman",
@@ -139,8 +202,30 @@ const translations = {
     graphic_desc: "Menciptakan identitas visual yang kuat dan konten kreatif yang memukau.",
     video_desc: "Memproduksi konten video sinematik berkualitas tinggi untuk berbagai kebutuhan kreatif.",
     lso_desc: "Mengelola operasional siaran langsung dan penyiaran acara secara profesional dan lancar.",
+    tag_tc: "Desain Test Case",
+    tag_bug: "Pelacakan Bug",
+    tag_sdlc: "SDLC",
+    tag_test_lvl: "Level & Tipe Tes",
+    tag_dt: "Design Thinking",
+    tag_wire: "Wireframing",
+    tag_proto: "Prototyping",
+    tag_broad: "Teknik Siaran",
+    tag_broad_live: "Penyiaran",
+    tag_live_evt: "Acara Langsung",
+    tag_media_mgt: "Manajemen Media",
+    tag_leader: "Kepemimpinan",
+    tag_team_lead: "Ketua Tim",
+    tag_app_ar: "Pengembangan Aplikasi · AR",
     exp_title: "Pengalaman",
     exp_sub: "Perjalanan profesional dan organisasi yang telah membentuk karir saya",
+    role_qa_intern: "Quality Assurance Intern",
+    comp_pt: "PT Pupuk Sriwidjaja",
+    role_broad_tech: "Teknisi Siaran",
+    comp_humas: "Humas Fasilkom UNSRI",
+    role_deputi: "Deputi Dinas Kominfo",
+    comp_bem: "BEM Fasilkom UNSRI",
+    role_pic_lso: "PIC LSO Techporia",
+    role_staff_multi: "Staf Multimedia",
     exp1_date: "Jun 25 – Agt 25",
     exp1_desc: "Bertanggung jawab memastikan produk/sistem memenuhi standar kualitas sebelum dirilis ke pengguna. Membuat test cases dan mengidentifikasi bug kritis.",
     exp2_date: "Feb 25 – Feb 26",
@@ -157,28 +242,45 @@ const translations = {
     port_sub: "Koleksi proyek terbaik dan publikasi ilmiah yang pernah saya kerjakan",
     f_all: "Semua",
     f_web: "Website",
-    f_app: "App Dev",
+    f_app: "Aplikasi",
     f_video: "Video",
     f_graphic: "Grafis",
     f_lso: "Live Streaming",
     f_pub: "Publikasi",
+    port1_title: "Website PM Fried Chicken",
     port1_desc: "Katalog Produk dan Sistem Pemesanan Online untuk PM Fried Chicken",
     btn_view_project: "Lihat Proyek",
+    port2_title: "LalaPedia — EduSawit AR",
     port2_desc: "Implementasi Augmented Reality untuk Edukasi Tanaman Sawit Ramah Lingkungan (Terbit di Jurnal Teknika)",
     btn_view_pub: "Lihat Publikasi",
+    port3_title: "Ekspor Fasilkom AR",
     port3_desc: "Pengenalan Fakultas Ilmu Komputer UNSRI berbasis Augmented Reality menggunakan Vuforia",
     btn_detail: "Detail Proyek",
+    port4_title: "Profil Ormawa Fasilkom",
     port4_desc: "Video profil resmi Organisasi Mahasiswa di Fakultas Ilmu Komputer UNSRI",
     btn_watch: "Tonton Video",
+    port5_title: "After Movie PKKMB 2023",
     port5_desc: "Video After Movie dari Orientasi Mahasiswa Baru (PKKMB) Fasilkom 2023",
+    port6_title: "Rebranding PM Fried Chicken",
     port6_desc: "Desain Logo baru dan Desain Ulang Konsep Visual Outlet PM Fried Chicken",
+    port7_title: "LSO Techporia 2023–2024",
     port7_desc: "Operator Siaran Langsung untuk Acara Technology Euphoria (Techporia) 2023–2024",
     btn_watch_live: "Tonton Live",
+    port8_title: "LSO Yudisium Fasilkom",
     port8_desc: "Operator Siaran Langsung untuk Acara Wisuda/Yudisium Fasilkom Angkatan 74–75",
     tag_pub: "Publikasi",
+    pub_teknika: "Jurnal Teknika",
+    pub_jati: "Jurnal JATI",
+    lbl_journal: "Jurnal",
+    port9_title: "EduSawit: AR untuk Edukasi Tanaman Sawit",
+    port9_title_short: "EduSawit — Augmented Reality",
     port9_desc: "Implementasi Augmented Reality dalam Edukasi Tanaman Sawit Ramah Lingkungan — Teknika, Nov 2025",
     btn_read_journal: "Baca Jurnal",
-    port10_desc: "Perancangan UI/UX Aplikasi Pemandu Wisata Palembang مع Metode Design Thinking — JATI, Mei 2025",
+    port10_title: "UI/UX Aplikasi \"PAYO\" Pemandu Wisata",
+    port10_title_short: "UI/UX App PAYO Palembang",
+    port10_desc: "Perancangan UI/UX Aplikasi Pemandu Wisata Palembang dengan Metode Design Thinking — JATI, Mei 2025",
+    port11_title: "Clustering Kualitas Hidup Indonesia",
+    port11_title_short: "Clustering Kualitas Hidup",
     port11_desc: "Perbandingan K-Means, K-Medoid, dan DBSCAN untuk Clustering Kualitas Hidup Indonesia — JATI, Mei 2025",
     contact_title: "Hubungi Saya",
     contact_sub: "Punya proyek menarik? Mari berkolaborasi bersama",
@@ -210,7 +312,16 @@ const translations = {
     nav_contact: "اتصل بي",
     hero_avail: "متاح للمشاريع والتعاون",
     hero_greeting: "مرحباً، أنا",
+    name_first: "محمد",
+    name_last: "رمضان بوترا براتاما",
+    name_last_2: "بوترا براتاما",
     hero_role_prefix: " ",
+    role_qa: "مهندس ضمان الجودة",
+    role_ui: "مصمم واجهة المستخدم",
+    role_web: "مطور ويب",
+    role_graphic: "مصمم جرافيك",
+    role_video: "محرر فيديو",
+    role_lso: "مشغل بث مباشر",
     hero_bio: "صانع محتوى رقمي شغوف مكرس لبناء منتجات رقمية عالية الجودة - من <strong>ضمان الجودة</strong> إلى <strong>تصميم واجهة المستخدم</strong> المرتكز على المستخدم والذي يحدث تأثيرًا حقيقيًا.",
     hero_cta_port: "عرض الأعمال",
     hero_cta_contact: "اتصل بي",
@@ -218,6 +329,9 @@ const translations = {
     stat_skills: "مهارات أساسية",
     stat_exp: "سنوات خبرة",
     scroll: "تمرير",
+    chip_qa: "جودة",
+    chip_design: "تصميم",
+    chip_video: "فيديو",
     about_title: "نبذة عني",
     about_sub: "تعرف أكثر على الشخص الذي يقف خلف هذه الإبداعات",
     about_badge: "سنوات<br>من الخبرة",
@@ -238,8 +352,30 @@ const translations = {
     graphic_desc: "إنشاء هويات بصرية قوية ومحتوى إبداعي مذهل.",
     video_desc: "إنتاج محتوى فيديو سينمائي عالي الجودة لمختلف الاحتياجات الإبداعية.",
     lso_desc: "إدارة عمليات البث المباشر وبث الأحداث بشكل احترافي وسلس.",
+    tag_tc: "تصميم حالات الاختبار",
+    tag_bug: "تتبع الأخطاء",
+    tag_sdlc: "دورة حياة البرمجيات",
+    tag_test_lvl: "مستويات الاختبار",
+    tag_dt: "التفكير التصميمي",
+    tag_wire: "تصميم الهيكل التخطيطي",
+    tag_proto: "النماذج الأولية",
+    tag_broad: "تقنية البث",
+    tag_broad_live: "البث الإذاعي",
+    tag_live_evt: "الأحداث المباشرة",
+    tag_media_mgt: "إدارة الإعلام",
+    tag_leader: "القيادة",
+    tag_team_lead: "قائد الفريق",
+    tag_app_ar: "تطوير تطبيقات · واقع معزز",
     exp_title: "الخبرات",
     exp_sub: "الرحلة المهنية والتنظيمية التي شكلت مسيرتي",
+    role_qa_intern: "متدرب ضمان الجودة",
+    comp_pt: "شركة بوبوك سريويدجايا",
+    role_broad_tech: "فني بث",
+    comp_humas: "علاقات عامة كلية علوم الحاسب",
+    role_deputi: "نائب قسم الإعلام",
+    comp_bem: "اتحاد طلاب كلية علوم الحاسب",
+    role_pic_lso: "مسؤول البث المباشر",
+    role_staff_multi: "موظف وسائط متعددة",
     exp1_date: "يونيو ٢٥ – أغسطس ٢٥",
     exp1_desc: "مسؤول عن ضمان تلبية المنتجات/الأنظمة لمعايير الجودة قبل إصدارها. قمت بإنشاء حالات اختبار وتحديد الأخطاء الحرجة.",
     exp2_date: "فبراير ٢٥ – فبراير ٢٦",
@@ -261,23 +397,40 @@ const translations = {
     f_graphic: "جرافيك",
     f_lso: "بث مباشر",
     f_pub: "منشورات",
+    port1_title: "موقع مطعم بي إم فرايد تشيكن",
     port1_desc: "كتالوج المنتجات ونظام الطلب عبر الإنترنت لمطعم بي إم فرايد تشيكن",
     btn_view_project: "عرض المشروع",
+    port2_title: "لالابيديا — واقع معزز إديوساويت",
     port2_desc: "تنفيذ الواقع المعزز لتعليم زيت النخيل الصديق للبيئة (نُشر في مجلة تكنيكا)",
     btn_view_pub: "عرض المنشور",
+    port3_title: "إكسبور فاسيليكوم واقع معزز",
     port3_desc: "مقدمة لكلية علوم الحاسب باستخدام الواقع المعزز Vuforia",
     btn_detail: "تفاصيل المشروع",
+    port4_title: "فيديو المنظمات الطلابية",
     port4_desc: "فيديو الملف الشخصي الرسمي للمنظمات الطلابية في كلية علوم الحاسب",
     btn_watch: "شاهد الفيديو",
+    port5_title: "فيديو ملخص التوجيه ٢٠٢٣",
     port5_desc: "فيديو ملخص لتوجيه الطلاب الجدد لعام ٢٠٢٣",
+    port6_title: "تغيير العلامة التجارية لمطعم بي إم",
     port6_desc: "تصميم شعار جديد ومفهوم بصري لمنافذ بي إم فرايد تشيكن",
+    port7_title: "مشغل بث حدث يوفوريا ٢٠٢٣-٢٠٢٤",
     port7_desc: "مشغل بث مباشر لحدث يوفوريا التكنولوجيا ٢٠٢٣-٢٠٢٤",
     btn_watch_live: "شاهد البث",
+    port8_title: "مشغل بث حدث التخرج",
     port8_desc: "مشغل بث مباشر لحدث التخرج دفعة ٧٤-٧٥",
     tag_pub: "منشور علمي",
+    pub_teknika: "مجلة تكنيكا",
+    pub_jati: "مجلة جاتي",
+    lbl_journal: "مجلة",
+    port9_title: "إديوساويت: واقع معزز لتعليم زيت النخيل",
+    port9_title_short: "إديوساويت — واقع معزز",
     port9_desc: "تنفيذ الواقع المعزز في تعليم زيت النخيل الصديق للبيئة — تكنيكا، نوفمبر ٢٠٢٥",
     btn_read_journal: "اقرأ المجلة",
+    port10_title: "تطبيق باليمبانج السياحي UI/UX",
+    port10_title_short: "تطبيق باليمبانج UI/UX",
     port10_desc: "تصميم واجهة المستخدم لتطبيق دليل باليمبانج السياحي باستخدام التفكير التصميمي — مايو ٢٠٢٥",
+    port11_title: "تجميع جودة الحياة في إندونيسيا",
+    port11_title_short: "تجميع جودة الحياة",
     port11_desc: "مقارنة K-Means و K-Medoid و DBSCAN لتجميع جودة الحياة في إندونيسيا — مايو ٢٠٢٥",
     contact_title: "اتصل بي",
     contact_sub: "هل لديك مشروع مثير للاهتمام؟ دعنا نتعاون معاً",
@@ -305,7 +458,7 @@ const translations = {
 document.addEventListener('DOMContentLoaded', () => {
 
   // ─────────────────────────────────────
-  // 1. LANGUAGE & RTL TOGGLE (i18n)
+  // 1. LANGUAGE TOGGLE (100% i18n, no RTL layout mirror)
   // ─────────────────────────────────────
   const html = document.documentElement;
   const langBtn = document.getElementById('langBtn');
@@ -313,7 +466,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const currentLangLabel = document.getElementById('currentLang');
   const langOptions = document.querySelectorAll('.lang-option');
 
-  // Set initial language
   let currentLang = localStorage.getItem('pm-lang') || 'en';
   setLanguage(currentLang);
 
@@ -342,7 +494,10 @@ document.addEventListener('DOMContentLoaded', () => {
     currentLang = lang;
     localStorage.setItem('pm-lang', lang);
     html.setAttribute('lang', lang);
-    html.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+    
+    // NOTE: Removed dir="rtl" to keep layout identically LTR for all languages
+    // as per user request to not flip the layout.
+    html.setAttribute('dir', 'ltr'); 
     currentLangLabel.textContent = lang.toUpperCase();
 
     // Update texts
@@ -411,7 +566,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ─────────────────────────────────────
-  // 4. PARTICLE CANVAS
+  // 4. PARTICLE CANVAS (Calm Indigo/Cyan theme)
   // ─────────────────────────────────────
   const canvas = document.getElementById('particleCanvas');
   const ctx    = canvas.getContext('2d');
@@ -428,15 +583,17 @@ document.addEventListener('DOMContentLoaded', () => {
     x:  Math.random() * canvas.width,
     y:  Math.random() * canvas.height,
     r:  Math.random() * 1.6 + 0.3,
-    vx: (Math.random() - 0.5) * 0.32,
-    vy: (Math.random() - 0.5) * 0.32,
-    o:  Math.random() * 0.4 + 0.07,
+    vx: (Math.random() - 0.5) * 0.25, // slower movement for calm effect
+    vy: (Math.random() - 0.5) * 0.25, // slower movement for calm effect
+    o:  Math.random() * 0.3 + 0.05,
   }));
 
   function drawDots() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     const dark = html.getAttribute('data-theme') === 'dark';
-    const rgb  = dark ? '96,165,250' : '37,99,235';
+    
+    // Updated particle colors to match calm Indigo / Cyan
+    const rgb = dark ? '99,102,241' : '6,182,212'; 
 
     dots.forEach(d => {
       d.x += d.vx;  d.y += d.vy;
@@ -460,7 +617,7 @@ document.addEventListener('DOMContentLoaded', () => {
           ctx.beginPath();
           ctx.moveTo(dots[i].x, dots[i].y);
           ctx.lineTo(dots[j].x, dots[j].y);
-          ctx.strokeStyle = `rgba(${rgb},${0.065 * (1 - d / 115)})`;
+          ctx.strokeStyle = `rgba(${rgb},${0.05 * (1 - d / 115)})`;
           ctx.lineWidth   = 0.5;
           ctx.stroke();
         }

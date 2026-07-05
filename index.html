@@ -25,7 +25,7 @@
   <!-- ════════════════════ HEADER ════════════════════ -->
   <header id="mainHeader">
     <div class="container nav-container">
-      <a href="#home" class="logo" dir="ltr">
+      <a href="#home" class="logo">
         <span class="logo-lt">&lt;</span>PrataMana<span class="logo-lt">/&gt;</span>
       </a>
       <nav id="navLinks" aria-label="Navigation">
@@ -78,18 +78,18 @@
         </div>
 
         <p class="hero-greeting" data-i18n="hero_greeting">Hello, I'm</p>
-        <h1 class="hero-name" dir="ltr">Muhammad<br><span class="name-hi">Ramadhan Putra Pratama</span></h1>
+        <h1 class="hero-name"><span data-i18n="name_first">Muhammad</span><br><span class="name-hi" data-i18n="name_last">Ramadhan Putra Pratama</span></h1>
 
         <!-- ROLE SWITCHER — 1 at a time -->
-        <div class="role-box" dir="ltr">
+        <div class="role-box">
           <span class="role-prefix" data-i18n="hero_role_prefix">A&nbsp;</span>
           <div class="role-stage" id="roleStage" aria-live="polite">
-            <span class="role-item">QA Engineer</span>
-            <span class="role-item">UI/UX Designer</span>
-            <span class="role-item">Web Developer</span>
-            <span class="role-item">Graphic Designer</span>
-            <span class="role-item">Video Editor</span>
-            <span class="role-item">Live Streaming Op.</span>
+            <span class="role-item" data-i18n="role_qa">QA Engineer</span>
+            <span class="role-item" data-i18n="role_ui">UI/UX Designer</span>
+            <span class="role-item" data-i18n="role_web">Web Developer</span>
+            <span class="role-item" data-i18n="role_graphic">Graphic Designer</span>
+            <span class="role-item" data-i18n="role_video">Video Editor</span>
+            <span class="role-item" data-i18n="role_lso">Live Streaming Op.</span>
           </div>
         </div>
 
@@ -133,9 +133,9 @@
           <div class="photo-wrap">
             <img src="2.png" alt="Muhammad Ramadhan Putra Pratama" />
           </div>
-          <div class="photo-chip chip-1"><i class="fas fa-shield-alt"></i> QA</div>
-          <div class="photo-chip chip-2"><i class="fas fa-paint-brush"></i> Design</div>
-          <div class="photo-chip chip-3"><i class="fas fa-video"></i> Video</div>
+          <div class="photo-chip chip-1"><i class="fas fa-shield-alt"></i> <span data-i18n="chip_qa">QA</span></div>
+          <div class="photo-chip chip-2"><i class="fas fa-paint-brush"></i> <span data-i18n="chip_design">Design</span></div>
+          <div class="photo-chip chip-3"><i class="fas fa-video"></i> <span data-i18n="chip_video">Video</span></div>
         </div>
       </div>
     </div>
@@ -168,7 +168,7 @@
 
         <div class="about-body" data-aos>
           <span class="about-tag" data-i18n="about_tag">Digital Creator &amp; QA Engineer</span>
-          <h3 class="about-name" dir="ltr">Muhammad Ramadhan<br>Putra Pratama</h3>
+          <h3 class="about-name"><span data-i18n="name_first">Muhammad Ramadhan</span><br><span data-i18n="name_last_2">Putra Pratama</span></h3>
 
           <p class="about-p" data-i18n="about_p1">
             Hi! I am a passionate digital creator focused on building reliable and user-centered products. With expertise spanning from <strong>Quality Assurance Engineering</strong> to <strong>UI/UX Design</strong>, I aim to bridge the gap between flawless functionality and beautiful interfaces.
@@ -184,7 +184,7 @@
             </div>
             <div class="meta-item">
               <i class="fas fa-envelope"></i>
-              <div><span data-i18n="lbl_email">Email</span><b dir="ltr">mrp.pratama6@gmail.com</b></div>
+              <div><span data-i18n="lbl_email">Email</span><b>mrp.pratama6@gmail.com</b></div>
             </div>
             <div class="meta-item">
               <i class="fas fa-briefcase"></i>
@@ -213,50 +213,50 @@
       <div class="skills-grid">
         <div class="sk-card" data-aos>
           <div class="sk-icon"><i class="fas fa-shield-alt"></i></div>
-          <h3 dir="ltr">Quality Assurance</h3>
+          <h3 data-i18n="role_qa">Quality Assurance</h3>
           <p data-i18n="qa_desc">Ensuring software quality through structured test cases, bug tracking, and a systematic SDLC approach.</p>
-          <div class="sk-chips" dir="ltr">
-            <span>Test Case Design</span><span>Bug Tracking</span><span>SDLC</span><span>Test Level & Type</span>
+          <div class="sk-chips">
+            <span data-i18n="tag_tc">Test Case Design</span><span data-i18n="tag_bug">Bug Tracking</span><span data-i18n="tag_sdlc">SDLC</span><span data-i18n="tag_test_lvl">Test Level & Type</span>
           </div>
         </div>
         <div class="sk-card" data-aos>
           <div class="sk-icon"><i class="fas fa-palette"></i></div>
-          <h3 dir="ltr">UI/UX Design</h3>
+          <h3 data-i18n="role_ui">UI/UX Design</h3>
           <p data-i18n="ui_desc">Designing intuitive user interfaces using Design Thinking and in-depth user research.</p>
-          <div class="sk-chips" dir="ltr">
-            <span>Figma</span><span>Design Thinking</span><span>Wireframing</span><span>Prototyping</span>
+          <div class="sk-chips">
+            <span>Figma</span><span data-i18n="tag_dt">Design Thinking</span><span data-i18n="tag_wire">Wireframing</span><span data-i18n="tag_proto">Prototyping</span>
           </div>
         </div>
         <div class="sk-card" data-aos>
           <div class="sk-icon"><i class="fas fa-laptop-code"></i></div>
-          <h3 dir="ltr">Web Development</h3>
+          <h3 data-i18n="role_web">Web Development</h3>
           <p data-i18n="web_desc">Building modern, responsive, and highly performant websites using the latest technologies.</p>
-          <div class="sk-chips" dir="ltr">
+          <div class="sk-chips">
             <span>HTML/CSS</span><span>JavaScript</span><span>React</span><span>Firebase</span>
           </div>
         </div>
         <div class="sk-card" data-aos>
           <div class="sk-icon"><i class="fas fa-pen-nib"></i></div>
-          <h3 dir="ltr">Graphic Design</h3>
+          <h3 data-i18n="role_graphic">Graphic Design</h3>
           <p data-i18n="graphic_desc">Creating strong visual identities and stunning creative content.</p>
-          <div class="sk-chips" dir="ltr">
+          <div class="sk-chips">
             <span>Photoshop</span><span>Illustrator</span><span>Canva</span><span>CorelDRAW</span>
           </div>
         </div>
         <div class="sk-card" data-aos>
           <div class="sk-icon"><i class="fas fa-film"></i></div>
-          <h3 dir="ltr">Video Editing</h3>
+          <h3 data-i18n="role_video">Video Editing</h3>
           <p data-i18n="video_desc">Producing high-quality cinematic video content for various creative needs.</p>
-          <div class="sk-chips" dir="ltr">
+          <div class="sk-chips">
             <span>Premiere Pro</span><span>After Effects</span><span>CapCut</span>
           </div>
         </div>
         <div class="sk-card" data-aos>
           <div class="sk-icon"><i class="fas fa-broadcast-tower"></i></div>
-          <h3 dir="ltr">Live Streaming</h3>
+          <h3 data-i18n="role_lso">Live Streaming</h3>
           <p data-i18n="lso_desc">Managing professional live streaming and broadcast event operations smoothly.</p>
-          <div class="sk-chips" dir="ltr">
-            <span>OBS Studio</span><span>vMix</span><span>YouTube Live</span><span>Broadcast Tech</span>
+          <div class="sk-chips">
+            <span>OBS Studio</span><span>vMix</span><span>YouTube Live</span><span data-i18n="tag_broad">Broadcast Tech</span>
           </div>
         </div>
       </div>
@@ -278,15 +278,15 @@
             <div class="exp-head-left">
               <div class="exp-dot"><i class="fas fa-shield-alt"></i></div>
               <div class="exp-info">
-                <h3 dir="ltr">Quality Assurance Intern</h3>
-                <span class="exp-company" dir="ltr"><i class="fas fa-building"></i> PT Pupuk Sriwidjaja</span>
+                <h3 data-i18n="role_qa_intern">Quality Assurance Intern</h3>
+                <span class="exp-company"><i class="fas fa-building"></i> <span data-i18n="comp_pt">PT Pupuk Sriwidjaja</span></span>
               </div>
             </div>
             <span class="exp-period" data-i18n="exp1_date">Jun 25 – Aug 25</span>
           </div>
           <p class="exp-desc" data-i18n="exp1_desc">Responsible for ensuring products/systems meet quality standards before release. Created structured test cases and identified critical bugs.</p>
-          <div class="exp-tags" dir="ltr">
-            <span>Test Case</span><span>Bug Tracking</span><span>SDLC</span>
+          <div class="exp-tags">
+            <span data-i18n="tag_tc">Test Case</span><span data-i18n="tag_bug">Bug Tracking</span><span data-i18n="tag_sdlc">SDLC</span>
           </div>
         </div>
 
@@ -295,15 +295,15 @@
             <div class="exp-head-left">
               <div class="exp-dot"><i class="fas fa-broadcast-tower"></i></div>
               <div class="exp-info">
-                <h3 dir="ltr">Live Streaming Operator</h3>
-                <span class="exp-company" dir="ltr"><i class="fas fa-university"></i> Humas Fasilkom UNSRI</span>
+                <h3 data-i18n="role_lso">Live Streaming Operator</h3>
+                <span class="exp-company"><i class="fas fa-university"></i> <span data-i18n="comp_humas">Humas Fasilkom UNSRI</span></span>
               </div>
             </div>
             <span class="exp-period" data-i18n="exp2_date">Feb 25 – Feb 26</span>
           </div>
           <p class="exp-desc" data-i18n="exp2_desc">Acted as Live Streaming Operator for official broadcasts at the Faculty of Computer Science, Sriwijaya University.</p>
-          <div class="exp-tags" dir="ltr">
-            <span>OBS Studio</span><span>Broadcasting</span>
+          <div class="exp-tags">
+            <span>OBS Studio</span><span data-i18n="tag_broad_live">Broadcasting</span>
           </div>
           <div class="exp-media-box">
             <img src="LSOY.jpg" alt="Live Streaming Operator" loading="lazy" />
@@ -316,15 +316,15 @@
             <div class="exp-head-left">
               <div class="exp-dot"><i class="fas fa-satellite-dish"></i></div>
               <div class="exp-info">
-                <h3 dir="ltr">Broadcast Technician</h3>
-                <span class="exp-company" dir="ltr"><i class="fas fa-globe"></i> ICAITECH 2025</span>
+                <h3 data-i18n="role_broad_tech">Broadcast Technician</h3>
+                <span class="exp-company"><i class="fas fa-globe"></i> ICAITECH 2025</span>
               </div>
             </div>
             <span class="exp-period" data-i18n="exp3_date">Nov 25</span>
           </div>
           <p class="exp-desc" data-i18n="exp3_desc">Served as Broadcast Technician at the ICAITECH 2025 international event, ensuring smooth technical broadcasts.</p>
-          <div class="exp-tags" dir="ltr">
-            <span>Broadcast Tech</span><span>Live Event</span>
+          <div class="exp-tags">
+            <span data-i18n="tag_broad">Broadcast Tech</span><span data-i18n="tag_live_evt">Live Event</span>
           </div>
         </div>
 
@@ -333,15 +333,15 @@
             <div class="exp-head-left">
               <div class="exp-dot"><i class="fas fa-users-cog"></i></div>
               <div class="exp-info">
-                <h3 dir="ltr">Deputi Dinas Kominfo</h3>
-                <span class="exp-company" dir="ltr"><i class="fas fa-university"></i> BEM Fasilkom UNSRI</span>
+                <h3 data-i18n="role_deputi">Deputi Dinas Kominfo</h3>
+                <span class="exp-company"><i class="fas fa-university"></i> <span data-i18n="comp_bem">BEM Fasilkom UNSRI</span></span>
               </div>
             </div>
             <span class="exp-period" data-i18n="exp4_date">Feb 24 – Dec 24</span>
           </div>
           <p class="exp-desc" data-i18n="exp4_desc">Led the media and information division, devised digital content strategies, and produced various creative media.</p>
-          <div class="exp-tags" dir="ltr">
-            <span>Media Management</span><span>Leadership</span>
+          <div class="exp-tags">
+            <span data-i18n="tag_media_mgt">Media Management</span><span data-i18n="tag_leader">Leadership</span>
           </div>
           <div class="exp-media-box">
             <img src="ProfOrmawaF.jpg" alt="Video Profil Ormawa Fasilkom" loading="lazy" />
@@ -354,15 +354,15 @@
             <div class="exp-head-left">
               <div class="exp-dot"><i class="fas fa-photo-video"></i></div>
               <div class="exp-info">
-                <h3 dir="ltr">PIC LSO Techporia</h3>
-                <span class="exp-company" dir="ltr"><i class="fas fa-star"></i> Technology Euphoria 2023</span>
+                <h3 data-i18n="role_pic_lso">PIC LSO Techporia</h3>
+                <span class="exp-company"><i class="fas fa-star"></i> Technology Euphoria 2023</span>
               </div>
             </div>
             <span class="exp-period" data-i18n="exp5_date">Sep 23 – Oct 23</span>
           </div>
           <p class="exp-desc" data-i18n="exp5_desc">Appointed as the Person In Charge of Live Streaming Operations for a national-level competition event.</p>
-          <div class="exp-tags" dir="ltr">
-            <span>Team Lead</span><span>OBS Studio</span>
+          <div class="exp-tags">
+            <span data-i18n="tag_team_lead">Team Lead</span><span>OBS Studio</span>
           </div>
           <div class="exp-media-box">
             <img src="LSOT.jpg" alt="Live Streaming Techporia" loading="lazy" />
@@ -375,15 +375,15 @@
             <div class="exp-head-left">
               <div class="exp-dot"><i class="fas fa-users"></i></div>
               <div class="exp-info">
-                <h3 dir="ltr">Staff Multimedia</h3>
-                <span class="exp-company" dir="ltr"><i class="fas fa-university"></i> BEM Fasilkom UNSRI</span>
+                <h3 data-i18n="role_staff_multi">Staff Multimedia</h3>
+                <span class="exp-company"><i class="fas fa-university"></i> <span data-i18n="comp_bem">BEM Fasilkom UNSRI</span></span>
               </div>
             </div>
             <span class="exp-period" data-i18n="exp6_date">Feb 23 – Dec 23</span>
           </div>
           <p class="exp-desc" data-i18n="exp6_desc">Responsible for multimedia content production, graphic design, and after-movie videos for student activities.</p>
-          <div class="exp-tags" dir="ltr">
-            <span>Video Editing</span><span>Graphic Design</span>
+          <div class="exp-tags">
+            <span data-i18n="role_video">Video Editing</span><span data-i18n="role_graphic">Graphic Design</span>
           </div>
           <div class="exp-media-box">
             <img src="AfterMoviePK2.jpg" alt="After Movie PKKMB" loading="lazy" />
@@ -403,7 +403,7 @@
         <p class="sec-sub" data-i18n="port_sub">A collection of my best projects and scientific publications</p>
       </div>
 
-      <div class="filters" dir="ltr">
+      <div class="filters">
         <button class="fb active" data-filter="all"     id="fAll" data-i18n="f_all">All</button>
         <button class="fb"        data-filter="web"     id="fWeb" data-i18n="f_web">Website</button>
         <button class="fb"        data-filter="app"     id="fApp" data-i18n="f_app">App Dev</button>
@@ -419,116 +419,116 @@
           <div class="pc-img">
             <img src="webpm.jpg" alt="PM Fried Chicken" loading="lazy" />
             <div class="pc-ov">
-              <span class="pc-tag" dir="ltr">Website</span>
-              <h3 dir="ltr">Website PM Fried Chicken</h3>
+              <span class="pc-tag" data-i18n="f_web">Website</span>
+              <h3 data-i18n="port1_title">Website PM Fried Chicken</h3>
               <p data-i18n="port1_desc">Product Catalog and Online Ordering System for PM Fried Chicken</p>
               <a href="https://pm-fried-chicken.vercel.app/" target="_blank" rel="noopener" id="pPMFC">
                 <i class="fas fa-external-link-alt"></i> <span data-i18n="btn_view_project">View Project</span>
               </a>
             </div>
           </div>
-          <div class="pc-foot"><span class="pcb web" dir="ltr">Web</span><h4 dir="ltr">Website PM Fried Chicken</h4></div>
+          <div class="pc-foot"><span class="pcb web" data-i18n="f_web">Web</span><h4 data-i18n="port1_title">Website PM Fried Chicken</h4></div>
         </div>
 
         <div class="pc" data-category="app" data-aos>
           <div class="pc-img">
             <img src="Lalapedia.jpg" alt="LalaPedia" loading="lazy" />
             <div class="pc-ov">
-              <span class="pc-tag" dir="ltr">App Dev · AR</span>
-              <h3 dir="ltr">LalaPedia — EduSawit AR</h3>
+              <span class="pc-tag" data-i18n="tag_app_ar">App Dev · AR</span>
+              <h3 data-i18n="port2_title">LalaPedia — EduSawit AR</h3>
               <p data-i18n="port2_desc">Implementation of Augmented Reality for Eco-Friendly Palm Oil Education (Published in Teknika Journal)</p>
               <a href="https://doi.org/10.34148/teknika.v14i3.1368" target="_blank" rel="noopener" id="pLala">
                 <i class="fas fa-external-link-alt"></i> <span data-i18n="btn_view_pub">View Publication</span>
               </a>
             </div>
           </div>
-          <div class="pc-foot"><span class="pcb app" dir="ltr">App</span><h4 dir="ltr">LalaPedia AR — EduSawit</h4></div>
+          <div class="pc-foot"><span class="pcb app" data-i18n="f_app">App</span><h4 data-i18n="port2_title">LalaPedia AR — EduSawit</h4></div>
         </div>
 
         <div class="pc" data-category="app" data-aos>
           <div class="pc-img">
             <img src="FAR.jpg" alt="Ekspor Fasilkom AR" loading="lazy" />
             <div class="pc-ov">
-              <span class="pc-tag" dir="ltr">App Dev · AR</span>
-              <h3 dir="ltr">Ekspor Fasilkom AR</h3>
+              <span class="pc-tag" data-i18n="tag_app_ar">App Dev · AR</span>
+              <h3 data-i18n="port3_title">Ekspor Fasilkom AR</h3>
               <p data-i18n="port3_desc">Introduction to the Faculty of Computer Science UNSRI based on Augmented Reality using Vuforia</p>
               <a href="#" id="pFAR"><i class="fas fa-info-circle"></i> <span data-i18n="btn_detail">Project Detail</span></a>
             </div>
           </div>
-          <div class="pc-foot"><span class="pcb app" dir="ltr">App</span><h4 dir="ltr">Ekspor Fasilkom AR</h4></div>
+          <div class="pc-foot"><span class="pcb app" data-i18n="f_app">App</span><h4 data-i18n="port3_title">Ekspor Fasilkom AR</h4></div>
         </div>
 
         <div class="pc" data-category="video" data-aos>
           <div class="pc-img">
             <img src="ProfOrmawaF.jpg" alt="Profil Ormawa Fasilkom" loading="lazy" />
             <div class="pc-ov">
-              <span class="pc-tag" dir="ltr">Video</span>
-              <h3 dir="ltr">Profil Ormawa Fasilkom</h3>
+              <span class="pc-tag" data-i18n="f_video">Video</span>
+              <h3 data-i18n="port4_title">Profil Ormawa Fasilkom</h3>
               <p data-i18n="port4_desc">Official profile video of the Student Organizations at the Faculty of Computer Science</p>
               <a href="https://youtu.be/acAdcMC0pOI?si=JtwlgcbvUsDU02m5" target="_blank" rel="noopener" id="pOrmawa">
                 <i class="fab fa-youtube"></i> <span data-i18n="btn_watch">Watch Video</span>
               </a>
             </div>
           </div>
-          <div class="pc-foot"><span class="pcb video" dir="ltr">Video</span><h4 dir="ltr">Profil Ormawa Fasilkom</h4></div>
+          <div class="pc-foot"><span class="pcb video" data-i18n="f_video">Video</span><h4 data-i18n="port4_title">Profil Ormawa Fasilkom</h4></div>
         </div>
 
         <div class="pc" data-category="video" data-aos>
           <div class="pc-img">
             <img src="AfterMoviePK2.jpg" alt="After Movie PKKMB 2023" loading="lazy" />
             <div class="pc-ov">
-              <span class="pc-tag" dir="ltr">Video</span>
-              <h3 dir="ltr">After Movie PKKMB 2023</h3>
+              <span class="pc-tag" data-i18n="f_video">Video</span>
+              <h3 data-i18n="port5_title">After Movie PKKMB 2023</h3>
               <p data-i18n="port5_desc">After Movie Video of the 2023 New Student Orientation</p>
               <a href="https://youtu.be/g1J2L5u9hSY?si=2R4-oSXQs7pmnMoE" target="_blank" rel="noopener" id="pPKKMB">
                 <i class="fab fa-youtube"></i> <span data-i18n="btn_watch">Watch Video</span>
               </a>
             </div>
           </div>
-          <div class="pc-foot"><span class="pcb video" dir="ltr">Video</span><h4 dir="ltr">After Movie PKKMB Fasilkom</h4></div>
+          <div class="pc-foot"><span class="pcb video" data-i18n="f_video">Video</span><h4 data-i18n="port5_title">After Movie PKKMB 2023</h4></div>
         </div>
 
         <div class="pc" data-category="graphic" data-aos>
           <div class="pc-img">
             <img src="RPM.jpg" alt="Rebranding PM Fried Chicken" loading="lazy" />
             <div class="pc-ov">
-              <span class="pc-tag" dir="ltr">Graphic</span>
-              <h3 dir="ltr">Rebranding PM Fried Chicken</h3>
+              <span class="pc-tag" data-i18n="f_graphic">Graphic</span>
+              <h3 data-i18n="port6_title">Rebranding PM Fried Chicken</h3>
               <p data-i18n="port6_desc">New Logo Design and Visual Concept Redesign for PM Fried Chicken Outlets</p>
               <a href="#" id="pRPM"><i class="fas fa-info-circle"></i> <span data-i18n="btn_detail">Project Detail</span></a>
             </div>
           </div>
-          <div class="pc-foot"><span class="pcb graphic" dir="ltr">Grafis</span><h4 dir="ltr">Rebranding PM Fried Chicken</h4></div>
+          <div class="pc-foot"><span class="pcb graphic" data-i18n="f_graphic">Graphic</span><h4 data-i18n="port6_title">Rebranding PM Fried Chicken</h4></div>
         </div>
 
         <div class="pc" data-category="lso" data-aos>
           <div class="pc-img">
             <img src="LSOT.jpg" alt="LSO Techporia 2023-2024" loading="lazy" />
             <div class="pc-ov">
-              <span class="pc-tag" dir="ltr">Live Streaming</span>
-              <h3 dir="ltr">LSO Techporia 2023–2024</h3>
+              <span class="pc-tag" data-i18n="f_lso">Live Streaming</span>
+              <h3 data-i18n="port7_title">LSO Techporia 2023–2024</h3>
               <p data-i18n="port7_desc">Live Streaming Operator for Technology Euphoria (Techporia) Event 2023–2024</p>
               <a href="https://www.youtube.com/live/TzOh_Jqm9QI?si=vl5Vx-earD_f60s-" target="_blank" rel="noopener" id="pLSOT">
                 <i class="fab fa-youtube"></i> <span data-i18n="btn_watch_live">Watch Live</span>
               </a>
             </div>
           </div>
-          <div class="pc-foot"><span class="pcb lso" dir="ltr">LSO</span><h4 dir="ltr">LSO Techporia 2023–2024</h4></div>
+          <div class="pc-foot"><span class="pcb lso" data-i18n="f_lso">LSO</span><h4 data-i18n="port7_title">LSO Techporia 2023–2024</h4></div>
         </div>
 
         <div class="pc" data-category="lso" data-aos>
           <div class="pc-img">
             <img src="LSOY.jpg" alt="LSO Yudisium Fasilkom 74-75" loading="lazy" />
             <div class="pc-ov">
-              <span class="pc-tag" dir="ltr">Live Streaming</span>
-              <h3 dir="ltr">LSO Yudisium Fasilkom</h3>
+              <span class="pc-tag" data-i18n="f_lso">Live Streaming</span>
+              <h3 data-i18n="port8_title">LSO Yudisium Fasilkom</h3>
               <p data-i18n="port8_desc">Live Streaming Operator for Graduation Event Batch 74–75</p>
               <a href="https://www.youtube.com/live/0ZjVnGVpNS0?si=W0G0MonsOw3g4rGZ" target="_blank" rel="noopener" id="pLSOY">
                 <i class="fab fa-youtube"></i> <span data-i18n="btn_watch_live">Watch Live</span>
               </a>
             </div>
           </div>
-          <div class="pc-foot"><span class="pcb lso" dir="ltr">LSO</span><h4 dir="ltr">LSO Yudisium Fasilkom 74–75</h4></div>
+          <div class="pc-foot"><span class="pcb lso" data-i18n="f_lso">LSO</span><h4 data-i18n="port8_title">LSO Yudisium Fasilkom</h4></div>
         </div>
 
         <!-- PUBLIKASI ILMIAH -->
@@ -536,54 +536,54 @@
           <div class="pc-img pc-img-pub">
             <div class="pub-cover">
               <i class="fas fa-book-open"></i>
-              <span dir="ltr">Jurnal Teknika</span>
+              <span data-i18n="pub_teknika">Jurnal Teknika</span>
             </div>
             <div class="pc-ov">
               <span class="pc-tag" data-i18n="tag_pub">Publication</span>
-              <h3 dir="ltr">EduSawit: AR untuk Edukasi Tanaman Sawit</h3>
+              <h3 data-i18n="port9_title">EduSawit: AR untuk Edukasi Tanaman Sawit</h3>
               <p data-i18n="port9_desc">Implementation of Augmented Reality in Eco-Friendly Palm Oil Education — Teknika, Nov 2025</p>
               <a href="https://doi.org/10.34148/teknika.v14i3.1368" target="_blank" rel="noopener" id="pubEdu">
                 <i class="fas fa-external-link-alt"></i> <span data-i18n="btn_read_journal">Read Journal</span>
               </a>
             </div>
           </div>
-          <div class="pc-foot"><span class="pcb pub" dir="ltr">Jurnal</span><h4 dir="ltr">EduSawit — Augmented Reality</h4></div>
+          <div class="pc-foot"><span class="pcb pub" data-i18n="lbl_journal">Journal</span><h4 data-i18n="port9_title_short">EduSawit — Augmented Reality</h4></div>
         </div>
 
         <div class="pc" data-category="pub" data-aos>
           <div class="pc-img pc-img-pub">
             <div class="pub-cover pub-cover-2">
               <i class="fas fa-map-marked-alt"></i>
-              <span dir="ltr">JATI Journal</span>
+              <span data-i18n="pub_jati">JATI Journal</span>
             </div>
             <div class="pc-ov">
               <span class="pc-tag" data-i18n="tag_pub">Publication</span>
-              <h3 dir="ltr">UI/UX Aplikasi "PAYO" Pemandu Wisata</h3>
+              <h3 data-i18n="port10_title">UI/UX Aplikasi "PAYO" Pemandu Wisata</h3>
               <p data-i18n="port10_desc">UI/UX Design of Palembang Tour Guide App using Design Thinking — JATI, May 2025</p>
               <a href="https://doi.org/10.36040/jati.v9i4.14176" target="_blank" rel="noopener" id="pubPayo">
                 <i class="fas fa-external-link-alt"></i> <span data-i18n="btn_read_journal">Read Journal</span>
               </a>
             </div>
           </div>
-          <div class="pc-foot"><span class="pcb pub" dir="ltr">Jurnal</span><h4 dir="ltr">UI/UX App PAYO Palembang</h4></div>
+          <div class="pc-foot"><span class="pcb pub" data-i18n="lbl_journal">Journal</span><h4 data-i18n="port10_title_short">UI/UX App PAYO Palembang</h4></div>
         </div>
 
         <div class="pc" data-category="pub" data-aos>
           <div class="pc-img pc-img-pub">
             <div class="pub-cover pub-cover-3">
               <i class="fas fa-chart-bar"></i>
-              <span dir="ltr">JATI Journal</span>
+              <span data-i18n="pub_jati">JATI Journal</span>
             </div>
             <div class="pc-ov">
               <span class="pc-tag" data-i18n="tag_pub">Publication</span>
-              <h3 dir="ltr">Clustering Kualitas Hidup Indonesia</h3>
+              <h3 data-i18n="port11_title">Clustering Kualitas Hidup Indonesia</h3>
               <p data-i18n="port11_desc">Comparison of K-Means, K-Medoid, and DBSCAN for Clustering Life Quality in Indonesia — JATI, May 2025</p>
               <a href="https://doi.org/10.36040/jati.v9i4.13916" target="_blank" rel="noopener" id="pubCluster">
                 <i class="fas fa-external-link-alt"></i> <span data-i18n="btn_read_journal">Read Journal</span>
               </a>
             </div>
           </div>
-          <div class="pc-foot"><span class="pcb pub" dir="ltr">Jurnal</span><h4 dir="ltr">Clustering Kualitas Hidup</h4></div>
+          <div class="pc-foot"><span class="pcb pub" data-i18n="lbl_journal">Journal</span><h4 data-i18n="port11_title_short">Clustering Kualitas Hidup</h4></div>
         </div>
 
       </div>
@@ -605,13 +605,13 @@
           <div class="ct-item">
             <div class="ct-ico"><i class="fas fa-envelope"></i></div>
             <div><span data-i18n="lbl_email">Email</span>
-              <a href="mailto:mrp.pratama6@gmail.com" id="cEmail" dir="ltr">mrp.pratama6@gmail.com</a>
+              <a href="mailto:mrp.pratama6@gmail.com" id="cEmail">mrp.pratama6@gmail.com</a>
             </div>
           </div>
           <div class="ct-item">
             <div class="ct-ico"><i class="fas fa-phone"></i></div>
             <div><span data-i18n="lbl_phone">Phone</span>
-              <a href="tel:+6282218402186" id="cPhone" dir="ltr">+62 822 1840 2186</a>
+              <a href="tel:+6282218402186" id="cPhone">+62 822 1840 2186</a>
             </div>
           </div>
           <div class="ct-item">
@@ -621,7 +621,7 @@
           <div class="ct-item">
             <div class="ct-ico"><i class="fas fa-globe"></i></div>
             <div><span data-i18n="lbl_web">Website</span>
-              <a href="https://prata-mana.vercel.app" target="_blank" rel="noopener" id="cWeb" dir="ltr">prata-mana.vercel.app</a>
+              <a href="https://prata-mana.vercel.app" target="_blank" rel="noopener" id="cWeb">prata-mana.vercel.app</a>
             </div>
           </div>
 
@@ -679,7 +679,7 @@
     <div class="container">
       <div class="ft-grid">
         <div class="ft-brand">
-          <a href="#home" class="logo" dir="ltr"><span class="logo-lt">&lt;</span>PrataMana<span class="logo-lt">/&gt;</span></a>
+          <a href="#home" class="logo"><span class="logo-lt">&lt;</span>PrataMana<span class="logo-lt">/&gt;</span></a>
           <p data-i18n="ft_brand_desc">Digital creator dedicated to crafting meaningful and impactful digital experiences.</p>
         </div>
         <div class="ft-nav">
@@ -705,7 +705,7 @@
         </div>
       </div>
       <div class="ft-bottom">
-        <p dir="ltr">&copy; 2025 PrataMana Portfolio &mdash; <span data-i18n="ft_copy">Made with <i class="fas fa-heart"></i> in Palembang</span></p>
+        <p>&copy; 2025 PrataMana Portfolio &mdash; <span data-i18n="ft_copy">Made with <i class="fas fa-heart"></i> in Palembang</span></p>
         <button class="btt" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
       </div>
     </div>
