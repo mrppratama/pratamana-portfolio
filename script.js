@@ -39,7 +39,7 @@ const translations = {
     about_p1: "Hi! I am a passionate digital creator focused on building reliable and user-centered products. With expertise spanning from <strong>Quality Assurance Engineering</strong> to <strong>UI/UX Design</strong>, I aim to bridge the gap between flawless functionality and beautiful interfaces.",
     about_p2: "My diverse background includes comprehensive software testing, crafting intuitive designs, managing live broadcast operations, and executing creative visual projects. I thrive on combining technical precision with creative vision to deliver impactful digital solutions.",
     lbl_loc: "Location",
-    val_loc: "Palembang, Indonesia",
+    val_loc: "Indramayu, Jawa Barat",
     lbl_email: "Email",
     lbl_status: "Status",
     val_status: "Open to Work",
@@ -189,7 +189,7 @@ const translations = {
     about_p1: "Hai! Saya adalah kreator digital yang berfokus membangun produk yang andal dan berpusat pada pengguna. Dengan keahlian yang mencakup <strong>Quality Assurance Engineering</strong> hingga <strong>UI/UX Design</strong>, saya menjembatani fungsi tanpa cela dengan antarmuka yang indah.",
     about_p2: "Latar belakang saya meliputi pengujian perangkat lunak, perancangan desain intuitif, pengelolaan siaran langsung, hingga eksekusi proyek visual kreatif. Saya senang menggabungkan presisi teknis dengan visi kreatif untuk menghasilkan solusi digital yang berdampak.",
     lbl_loc: "Lokasi",
-    val_loc: "Palembang, Indonesia",
+    val_loc: "Indramayu, Jawa Barat",
     lbl_email: "Email",
     lbl_status: "Status",
     val_status: "Terbuka untuk Bekerja",
@@ -301,7 +301,7 @@ const translations = {
     ft_brand_desc: "Kreator digital yang bersemangat menciptakan pengalaman digital yang bermakna dan berdampak.",
     ft_nav_title: "Navigasi",
     ft_soc_title: "Media Sosial",
-    ft_copy: "Dibuat dengan <i class=\"fas fa-heart\"></i> di Palembang"
+    ft_copy: "Dibuat dengan <i class=\"fas fa-heart\"></i> di Indramayu"
   },
   ar: {
     nav_home: "الرئيسية",
@@ -815,3 +815,4 @@ document.addEventListener('DOMContentLoaded', () => {
 const s = document.createElement('style');
 s.textContent = '@keyframes cardIn{from{opacity:0;transform:scale(.96)}to{opacity:1;transform:scale(1)}}';
 document.head.appendChild(s);
+
